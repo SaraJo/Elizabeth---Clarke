@@ -1,22 +1,50 @@
-body{
+body
+{
 	background-color: #dbd5cf;
 }
 
-@font-face {
+@font-face 
+{
 font-family: "Museo300";
 src: url(fonts/Museo300-Regular.otf);
 }
 
-@font-face {
+@font-face 
+{
 font-family: "Numbers Delancey";
 src: url(fonts/Numbers/Numbers Delancey);
 }
 
-#slideshow * {
+#season-options
+{
+	margin: 0;
+    padding: 0;
+}
+
+#season-options img
+{
+	border-radius:30px;
+}
+
+#slideshow * 
+{
     margin: 0;
     padding: 0;
 }
-#slideshow, #images {
+.shirts
+{
+	float: left;
+	display: inline-block;
+	padding: 0 70px 70px 100px;
+	width: 926px;
+	height: 335px;
+	margin-left: -26px;
+	margin-top: 41px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+#slideshow, #images 
+{
 	float: right;
 	position: relative;
 	display: inline-block;
@@ -29,7 +57,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border-radius: 30px;
 	
 }
-#slideshow #pictures {
+#slideshow #pictures 
+{
     background: url('images/bg.jpg');
   	width: 926px;
     height: 335px;
@@ -43,13 +72,15 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-webkit-box-shadow: 15px 15px 25px #666;
 	box-shadow: 15px 15px 25px #666;
 }
-#slideshow #pictures li {
+#slideshow #pictures li 
+{
     display: inline-block;
     position: absolute;
     top: 0;
     width: 926px;
 }
-#slideshow #pictures li img {
+#slideshow #pictures li img 
+{
     display: inline-block;
     position: relative;
 	width:926px;
@@ -57,7 +88,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 }
-#slideshow #menu {
+#slideshow #menu 
+{
     list-style-type: none;
     right: 0;
     padding-top: 310px;
@@ -68,10 +100,12 @@ src: url(fonts/Numbers/Numbers Delancey);
     float:left;
     z-index: 2;
 }
-#slideshow #menu li {
+#slideshow #menu li 
+{
 	float:left;
 }
-#slideshow #menu li a {
+#slideshow #menu li a 
+{
     display: block;
     font: 11px "Lucida Grande", "Verdana";
     text-decoration: none;
@@ -81,14 +115,17 @@ src: url(fonts/Numbers/Numbers Delancey);
     line-height: 14px;
     vertical-align: middle;
 }
-#slideshow #menu li a:hover {
+#slideshow #menu li a:hover 
+{
     color: #fff;
 }
-#slideshow #menu li.current a {
+#slideshow #menu li.current a 
+{
 	font-weight: bold;
     color: #fff;
 }
-#slideshow #pictures .subscribe {
+#slideshow #pictures .subscribe 
+{
     height:91px;
     width:252px;
     position:absolute;
@@ -99,7 +136,8 @@ src: url(fonts/Numbers/Numbers Delancey);
     background: url('images/SubscribeButton-Light.png');
 }
 
-#slideshow #pictures .subscribe:hover {
+#slideshow #pictures .subscribe:hover 
+{
     height:91px;
     width:252px;
     position:absolute;
@@ -110,7 +148,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	cursor:pointer;
 }
 
-#slideshow #pictures .subscribe-small {
+#slideshow #pictures .subscribe-small 
+{
     height:62px;
     width:232px;
     position:absolute;
@@ -123,7 +162,8 @@ src: url(fonts/Numbers/Numbers Delancey);
     background: url('images/Slideshow-Button-Image0-Light.png');
 }
 
-#slideshow #pictures .subscribe-small:hover {
+#slideshow #pictures .subscribe-small:hover 
+{
 	height:57px;
     width:228px;
     position:absolute;
@@ -134,21 +174,23 @@ src: url(fonts/Numbers/Numbers Delancey);
     background: url('images/Slideshow-Button-Image0-Dark.png');
 }
 
-#loading{
+#loading
+{
 	position:absolute;
 	z-index: -1;
 	padding-left:375px;
 	padding-top:100px;
 }
 
-.side-menu{
+.side-menu
+{
 	padding-left:35px;
 	padding-top: 50px;
 	float:left;
 	display: inline;
 }
-
-.side-menu li{
+.side-menu li
+{
 	list-style-type:none;
 	padding-bottom:40px;
 }
@@ -165,7 +207,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	margin-right: 129px;
 	margin-top: 43px;
 }
-.top-menu ul{
+.top-menu ul
+{
 	font-family: 'Copse', serif;
 	color:#bab4b0;
 	font-size:14pt;
@@ -174,7 +217,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	list-style-type: none;
 }
 
-.top-menu li{
+.top-menu li
+{
 	padding-left:20px;
 	float:right;
 }
@@ -183,7 +227,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	color:#7c7874;
 }
-
 
 .bottom-menu
 {
@@ -356,7 +399,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: #736f6c;
 }
 
-#mce-EMAIL{
+#mce-EMAIL
+{
 	font-family: Museo300;
 	font-size:20pt;
 	color:#dbd5cf;
@@ -367,35 +411,56 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width:400px;
 	height:40px;
 }
-button{
+button
+{
 		float:left;
 		padding-left:10px;
 }
 
-.mc_embed_signup{
+.mc_embed_signup
+{
 	height:150px;
 	padding-top:100px;
 }
-
-.subscribe-now{
+.subscribe-now input
+{
 	float:right;
+}
+
+.subscribe-now table
+{
+	float:right;
+	padding-top: 70px;
+}
+
+.subscribe-now
+{
+	width: 926px;
+	float: left;
 	padding-right:80px;
 	padding-top: 50px;
 }
 
-#totals span{
+#totals span
+{
 	right: 0;
 	position: absolute;
 	padding-right:100px;
 }
 
-#try-on{
+#try-on
+{
 	width:50%;
 	margin:0 auto;
 	float:right;
 }
 
-.contain{
+.space
+{
+}
+
+.contain
+{
 	font-family: 'Copse', serif;
 	color: #bab4b0;
 	font-size: 18pt;
@@ -407,6 +472,7 @@ button{
 {
 	padding-left:50px;
 }
+
 #totals
 {
 	width:40%;
@@ -415,7 +481,13 @@ button{
 	line-height: 150%;
 }
 
-.select {
+body 
+{
+	font: 0.8em/21px arial,sans-serif;
+}
+
+.select 
+{
 	position: absolute;
 	width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
 	height: 21px;
@@ -425,6 +497,7 @@ button{
 	background: url("../style/images/dropdown-menu.png") no-repeat;
 	overflow: hidden;
 }
+
 .table
 {
 background:#333;
@@ -460,7 +533,6 @@ width:200px;
 width:200px;
 text-align: right;
 }
-
 
 #home
 {
@@ -653,4 +725,11 @@ text-align: right;
 	height: 25px;
 	cursor:pointer;
 	background: url("../style/images/foundersblog-bottomnav-dark.png");
+}
+
+#home
+{
+	width: width of image;
+	height: height of image;
+	background: url("../style/images/nameofgraphic.png");
 }
