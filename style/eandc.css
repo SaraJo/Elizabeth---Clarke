@@ -610,7 +610,7 @@ text-align: right;
 	background: url("../style/images/sidenav-contact-light.png");
 }
 
-#contact-sinav.hover 
+#contact-sidenav.hover 
 {
 	display: block;
 	width: 88px;
@@ -636,7 +636,7 @@ text-align: right;
 	background: url("../style/images/topnav-contact-dark.png");
 }
 
-#subscribe
+#subscribe-topnav
 {
 	display: block;
 	width: 98px;
@@ -644,7 +644,7 @@ text-align: right;
 	background: url("../style/images/topnav-subscribe-light.png");
 }
 
-#subscribe.hover 
+#subscribe-topnav.hover 
 {
 	display: block;
 	width: 98px;
@@ -725,11 +725,4 @@ text-align: right;
 	height: 25px;
 	cursor:pointer;
 	background: url("../style/images/bottomnav-foundersblog-dark.png");
-}
-
-#home
-{
-	width: width of image;
-	height: height of image;
-	background: url("../style/images/nameofgraphic.png");
 }
