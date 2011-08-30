@@ -411,11 +411,17 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width:400px;
 	height:40px;
 }
-button
+.button
 {
 		float:left;
 		padding-left:10px;
+		background:url("images/Button-Home-Light.png");
 }
+
+.button:hover{
+		background:url("images/Button-Home-Dark.png");
+}
+
 
 .mc_embed_signup
 {
@@ -542,7 +548,7 @@ text-align: right;
 	background: url("../style/images/home-sidenav-light.png");
 }
 
-#home.hover 
+#home:hover 
 {
 	display: block;
 	width: 70px;
@@ -559,7 +565,7 @@ text-align: right;
 	background: url("../style/images/howitworks-sidenav-light.png");
 }
 
-#how-it-works.hover 
+#how-it-works:hover 
 {
 	display: block;
 	width: 153px;
@@ -576,7 +582,7 @@ text-align: right;
 	background: url("../style/images/theshirts-sidenav-light.png");
 }
 
-#the-shirts.hover 
+#the-shirts:hover 
 {
 	display: block;
 	width: 114px;
@@ -593,7 +599,7 @@ text-align: right;
 	background: url("../style/images/faq-sidenav-light.png");
 }
 
-#faq.hover 
+#faq:hover 
 {
 	display: block;
 	width: 38px;
@@ -610,7 +616,7 @@ text-align: right;
 	background: url("../style/images/contact-sidenav-light.png");
 }
 
-#contact-sinav.hover 
+#contact-sinav:hover 
 {
 	display: block;
 	width: 88px;
@@ -627,7 +633,7 @@ text-align: right;
 	background: url("../style/images/contact-topnav-light.png");
 }
 
-#contact-topnav.hover 
+#contact-topnav:hover 
 {
 	display: block;
 	width: 76px;
@@ -644,7 +650,7 @@ text-align: right;
 	background: url("../style/images/subscribe-topnav-light.png");
 }
 
-#subscribe.hover 
+#subscribe:hover 
 {
 	display: block;
 	width: 98px;
@@ -662,7 +668,7 @@ text-align: right;
 	background: url("../style/images/myorder-topnav-light.png");
 }
 
-#my-order.hover 
+#my-order:hover 
 {
 	margin-top: 2px;
 	display: block;
@@ -681,7 +687,7 @@ text-align: right;
 	background: url("../style/images/facebook-bottomnav-light.png");
 }
 
-#facebook.hover 
+#facebook:hover 
 {
 	margin-top: 1px;
 	display: block;
@@ -700,7 +706,7 @@ text-align: right;
 	background: url("../style/images/twitter-bottomnav-light.png");
 }
 
-#twitter.hover 
+#twitter:hover 
 {
 	margin-top: 1px;
 	display: block;
@@ -718,18 +724,11 @@ text-align: right;
 	background: url("../style/images/foundersblog-bottomnav-light.png");
 }
 
-#founders-blog.hover 
+#founders-blog:hover 
 {
 	display: block;
 	width: 145px;
 	height: 25px;
 	cursor:pointer;
 	background: url("../style/images/foundersblog-bottomnav-dark.png");
-}
-
-#home
-{
-	width: width of image;
-	height: height of image;
-	background: url("../style/images/nameofgraphic.png");
 }
