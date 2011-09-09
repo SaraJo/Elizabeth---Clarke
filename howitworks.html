@@ -7,29 +7,39 @@
   <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
 
 </head>
+<script>
+function mouseOverBtn(){
+  document.getElementById("subscribe-addtocart").src='style/images/Button-HowItWorks-Dark.png';
+}
+
+function mouseOutBtn(){
+  document.getElementById("subscribe-addtocart").src='style/images/Button-HowItWorks-Light.png';
+}
+</script>
 <body id="demo">    
     <div id="content">
       <img src="style/images/ElizabethANDClarkeLogo.jpg" class="logo"/>
        <div class="top-menu"><ul>
-    		<li><a id="contact-topnav"></a></li>
-    		<li><a id="subscribe-topnav"></a></li>
-    		<li><a id="my-order"></a></li>
+    		<li><a id="contact-topnav" href="contactus.html"></a></li>
+    		<li><a id="subscribe-topnav" href="addtocart.html"></a></li>
+    		<li><a id="my-order" href="http://paypal.com"></a></li>
     	</ul></div>
     <div class="menu-slides">
        <ul class="side-menu">
-          	<li><a id="home"></a></li>
-          	<li><a id="how-it-works"></a></li>
-          	<li><a id="the-shirts"></a></li>
-          	<li><a id="faq"></a></li>
-          	<li><a id="contact-sidenav"></a></li>
+          	<li><a id="home" href="index.html"></a></li>
+          	<li><a id="how-it-works" href="howitworks.html"></a></li>
+          	<li><a id="the-shirts" href="theshirts.html"></a></li>
+          	<li><a id="faq" href="faq.html"></a></li>
+          	<li><a id="contact-sidenav" href="contactus.html"></a></li>
         </ul>
-    <div id="images">    
-      <img src="style/images/HowItWorks-Image.png" />
+    <div class="shirts-image">    
+      <img src="style/images/HowItWorks-Image.png" style="float:left" />
     </div>
-    <a>
-      <img src="style/images/Button-HowItWorks.png" id="subscribe-now" />
-    </a>
+   
     <div class="copy howitworks">
+       <a href="addtocart.html" >
+          <img src="style/images/Button-HowItWorks-Light.png" id="subscribe-addtocart" onMouseOver="mouseOverBtn()" onMouseOut="mouseOutBtn()" />
+        </a>
       <p>Tired of having to wade through the racks at H&amp;M and Zara - searching for the perfect white basic top for a reasonable price - only to be stuck with an item that falls apart after 3 washes?</p>
 
       <p>Maybe you have coughed up $150 or more for a designer basic from James Perse or Theysken’s Theory - only to check the tag and see that it is 100% polyester and made in China? </p>
@@ -37,12 +47,12 @@
       <p>Well, suffer no more. You can stop searching for the perfect white basic. Elizabeth &amp; Clarke is here. Welcome.</p>
     </div>
   
-     <ul class="bottom-menu">
-        <li><a id="facebook"></a></li>
-        <li><a id="twitter"></a></li>
-        <li><a id="contact-topnav"></a></li>
-        <li><a id="founders-blog"></a></li>
-      </ul>
+       <ul class="bottom-menu">
+         <li><a id="facebook" href="http://www.facebook.com/pages/Elizabeth-Clarke/271444709548359"></a></li>
+         <li><a id="twitter" href="http://www.twitter.com/perfect_basics"></a></li>
+         <li><a id="contact-topnav" href="contactus.html"></a></li>
+         <li><a id="founders-blog" href="http://www.melanie.io"></a></li>
+       </ul>
     </div>
 </body>
  <script type="text/javascript">
