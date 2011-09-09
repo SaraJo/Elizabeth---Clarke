@@ -25,7 +25,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 #season-options
 {
 	margin: 0;
-    padding: 0;
+    padding: 72px;
 }
 
 #season-options img
@@ -548,12 +548,18 @@ button
 .subscribe-now table
 {
 	float:right;
-	padding-top: 70px;
 }
-
+#dont-wait{
+	padding-left:110px;
+}
+#align{
+	float:right;
+	width: 300px;
+	padding-right: 158px;
+}
 .subscribe-now
 {
-	width: 926px;
+	width:100%;
 	float: left;
 	padding-right:80px;
 	padding-top: 50px;
@@ -563,14 +569,15 @@ button
 {
 	right: 0;
 	position: absolute;
-	padding-right:100px;
+	padding-right:200px;
 }
 
 #try-on
 {
 	width:50%;
 	margin:0 auto;
-	float:right;
+	float:left;
+	padding-left: 110px;
 }
 
 .space
@@ -582,13 +589,13 @@ button
 	font-family: 'Copse', serif;
 	color: #bab4b0;
 	font-size: 18pt;
-	width:70%;
+	width:85%;
 	float:right;
+	padding-bottom:100px;
 }
 
 #try-on-img
 {
-	padding-left:50px;
 }
 
 #totals
