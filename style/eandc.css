@@ -46,7 +46,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 #slideshow * {
     margin: 0;
-    padding: 0;
+	padding: 0;
 	width:80%;
 }
 
@@ -70,7 +70,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 #slideshow #pictures 
 {
-  	width: 926px;
+	width: 926px;
     height: 335px;
     left: 0;
     overflow: hidden;
@@ -84,7 +84,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 #slideshow #pictures li 
 {
-    display: inline-block;
+	display: inline-block;
     position: absolute;
     top: 0;
     width: 926px;
@@ -200,7 +200,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color:#bab4b0;
 	font-size:14pt;
 	padding-left:35px;
-	padding-top: 50px;
+	padding-top: 35px;
 }
 .side-menu li
 {
@@ -499,23 +499,30 @@ src: url(fonts/Numbers/Numbers Delancey);
 #sign-up
 {
 	font-family: Museo300;
-	font-size:20pt;
+	font-size:24pt;
 	float:left;
-	padding-left:345px;
+	margin-top: -38px;
+	padding-left:332px;
 	color: #736f6c;
+	-webkit-font-smoothing: antialiased;
 }
 
 #mce-EMAIL
 {
 	font-family: Museo300;
-	font-size:20pt;
+	font-size:24pt;
 	color:#dbd5cf;
 	float:left;
-	margin-left:20px;
+	margin-left:635px;
+	margin-top: -52px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	width:400px;
-	height:40px;
+	width:420px;
+	height:49px;
+	box-shadow:inset 3px 3px 8px #9b9696; 
+	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
+	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
+	border: none;
 }
 
 button
@@ -532,7 +539,8 @@ button
 	border-radius: 7px;
 	color: #333333;
 	float: right;
-	margin: -3px 187px 57px 0px;
+	margin: -52px 128px 57px 0px;
+	box-shadow: 5px 5px 8px #9b9696;
 }
 
 .mc_embed_signup
