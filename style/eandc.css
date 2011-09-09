@@ -861,3 +861,7 @@ text-align: right;
 	cursor:pointer;
 	background: url("../style/images/bottomnav-foundersblog-dark.png");
 }
+
+#clear{
+	clear:both;;
+}
