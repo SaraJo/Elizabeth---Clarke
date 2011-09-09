@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><!-- <!DOCTYPE HTML> -->
+ <html>​
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Elizabeth &amp; Clarke</title>​
+  <link rel="stylesheet" href="style/eandc.css" type="text/css" media="screen" title="Stylesheet" />​
+  <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+  
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core-yc.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
+<script type="text/javascript">
+ window.addEvent('domready', function(){
+   HTMLElement.prototype.click = function() {
+   var evt = this.ownerDocument.createEvent('MouseEvents');
+   evt.initMouseEvent('click', true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+   this.dispatchEvent(evt);
+};
+
+function mouseOverSmall(){
+  alert("mouseover");
+}
+</script>
+</head>
+<body id="demo">    
+    <div id="content">
+      <img src="style/images/ElizabethANDClarkeLogo.jpg" class="logo"/>
+    
+	<div class="top-menu">
+	<ul>
+		<li><a id="contact-topnav"></a></li>
+		<li><a id="subscribe-topnav"></a></li>
+		<li><a id="my-order"></a></li>
+	</ul>
+	</div>
+	
+	<div class="menu-slides">
+		<div class="header">
+	      contact us
+	    </div>
+	</div>
+    <ul class="side-menu">
+      	<li><a id="home"></a></li>
+      	<li><a id="how-it-works"></a></li>
+      	<li><a id="the-shirts"></a></li>
+      	<li><a id="faq"></a></li>
+      	<li><a id="contact-sidenav"></a></li>
+    </ul>
+	<div class="answer">
+	<div>
+	<form>
+	<div class="contactus-form">
+		<input type="full-name" value="" name="full-name" placeholder=" full name" class="required-name" id="contactus-name"/>
+		<input type="email" value="" name="email" placeholder=" email" class="required-email" id="contactus-email"/>
+		<textarea type="message" value="" name="message" placeholder=" message" class="required-message" id="contactus-message"></textarea>
+		<input type="submit" name="send-message" value="" id="send-message">
+	</div>		
+	</form>		
+			<div class="call-us-contactus">
+				<p>call us</p> 
+				<p>+1 917 207 1420</p>
+			</div>
+		<img src="style/images/ContactUs-Phone.png" class="phone-contactus"/>	
+		<img src="style/images/ContactUs-Pen.png" class="pen-contactus"/>
+			<div class="email-us-contactus">
+				or email us
+				<p>info@elizabethandclarke.com</p>
+			</div>
+	</div>		
+	</div>
+
+    <ul class="bottom-menu">
+      <li><a id="facebook"></a></li>
+      <li><a id="twitter"></a></li>
+      <li><a id="contact-topnav"></a></li>
+      <li><a id="founders-blog"></a></li>
+    </ul>
+</body>
+ <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25112636-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</html>

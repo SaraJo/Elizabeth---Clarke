@@ -269,8 +269,14 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height: 251px;
 	margin-left: -26px;
 	margin-top: 40px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+}
+.phone-contactus
+{
+	float: right;
+	display: inline-block;
+	width: 216px;
+	height: 251px;
+	margin-top: -483px;
 }
 .call-us
 {
@@ -280,8 +286,15 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width: 250px;
 	margin-left: -30px;
 	margin-top: 12px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+}
+.call-us-contactus
+{
+	font-size: 24pt;
+	float: left;
+	display: inline-block;
+	width: 250px;
+	margin-left: 400px;
+	margin-top: -513px;
 }
 .pen
 {
@@ -291,8 +304,15 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height: 251px;
 	margin-left: 140px;
 	margin-top: 40px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+}
+.pen-contactus
+{
+	float: right;
+	display: inline-block;
+	width: 257px;
+	height: 264px;
+	margin-right: 270px;
+	margin-top: -300px;
 }
 .email-us
 {
@@ -303,8 +323,15 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width: 360px;
 	margin-left: 280px;
 	margin-top: -40px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+}
+.email-us-contactus
+{
+	font-size: 24pt;
+	text-align: right;
+	float: right;
+	display: inline-block;
+	width: 650px;
+	margin-top: -50px;
 }
 .header
 {
@@ -385,6 +412,73 @@ src: url(fonts/Numbers/Numbers Delancey);
 	margin-top: 40px;
 }
 
+.contactus-form
+{
+	width: 350px;
+}
+
+#contactus-name
+{
+	font-family: Museo300;
+	font-size:22pt;
+	color:#dbd5cf;
+	float:left;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	width:350px;
+	height:42px;
+	box-shadow:inset 3px 3px 8px #9b9696; 
+	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
+	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
+	border: none;
+}
+
+#contactus-email
+{
+	font-family: Museo300;
+	font-size:22pt;
+	color:#dbd5cf;
+	float:left;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	width:350px;
+	height:42px;
+	box-shadow:inset 3px 3px 8px #9b9696; 
+	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
+	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
+	border: none;
+}
+
+#contactus-message
+{
+	font-family: Museo300;
+	font-size:22pt;
+	color:#dbd5cf;
+	float:left;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;
+	width:350px;
+	height:220px;
+	text-align: top;
+	box-shadow:inset 3px 3px 8px #9b9696; 
+	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
+	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
+}
+
+#send-message
+{
+	width: 248px;
+	height: 68px;
+	cursor:pointer;
+	margin-top: 20px;
+	margin-left: 114px;
+	border: none;
+	background: url("../style/images/Button-ContactUs.png");
+}
+
 .howitworks
 {
 	margin-top: 0px;
@@ -411,6 +505,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width:400px;
 	height:40px;
 }
+
 button
 {
 		float:left;
