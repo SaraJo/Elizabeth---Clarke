@@ -1,6 +1,10 @@
-body
-{
-	background-color: #dbd5cf;
+
+body,
+html {
+margin:0;
+padding:0;
+color:#000;
+background:#dbd5cf;
 }
 
 @font-face 
@@ -15,6 +19,9 @@ font-family: "Numbers Delancey";
 src: url(fonts/Numbers/Numbers Delancey);
 }
 
+#content{
+	width: 1390px; 
+}
 #season-options
 {
 	margin: 0;
@@ -24,12 +31,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 #season-options img
 {
 	border-radius:30px;
-}
-
-#slideshow * 
-{
-    margin: 0;
-    padding: 0;
 }
 .shirts
 {
@@ -43,23 +44,32 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 }
+#slideshow * {
+    margin: 0;
+    padding: 0;
+	width:80%;
+}
+
+.menu-slides{
+	width:100%;
+	height:400px;
+	display:inline-block;
+}
 #slideshow, #images 
 {
 	float: right;
 	position: relative;
 	display: inline-block;
-	padding: 0 30px 55px 10px;
+	padding: 0 30px 55px 98px;
 	width: 926px;
 	height: 335px;
 	margin-left: -5px;
 	margin-top: 41px;
 	-moz-border-radius: 30px;
-	border-radius: 30px;
-	
+	border-radius: 30px;	
 }
 #slideshow #pictures 
 {
-    background: url('images/bg.jpg');
   	width: 926px;
     height: 335px;
     left: 0;
@@ -99,6 +109,7 @@ src: url(fonts/Numbers/Numbers Delancey);
     position:relative;
     float:left;
     z-index: 2;
+	display:none;
 }
 #slideshow #menu li 
 {
@@ -147,11 +158,10 @@ src: url(fonts/Numbers/Numbers Delancey);
     background: url('images/Button-Home-Dark.png');
 	cursor:pointer;
 }
-
 #slideshow #pictures .subscribe-small 
 {
-    height:62px;
-    width:232px;
+    height:51px;
+    width:228px;
     position:absolute;
 	margin-right:33px;
     margin-bottom:22px;
@@ -164,11 +174,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 #slideshow #pictures .subscribe-small:hover 
 {
-	height:57px;
+	height:51px;
     width:228px;
     position:absolute;
-	margin-right:37px;
-	margin-bottom:27px;
+	margin-right:33px;
+	margin-bottom:22px;
     float:right;
     cursor:pointer;
     background: url('images/Button-Slideshow-Image0-Dark.png');
@@ -184,10 +194,13 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 .side-menu
 {
+	width:20%;
+	float:left;
+	font-family:'Copse', serif;
+	color:#bab4b0;
+	font-size:14pt;
 	padding-left:35px;
 	padding-top: 50px;
-	float:left;
-	display: inline;
 }
 .side-menu li
 {
@@ -409,7 +422,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	float:right;
 	display: inline;
 	margin-right: 129px;
-	margin-top: 40px;
 }
 
 .contactus-form
@@ -510,6 +522,17 @@ button
 {
 		float:left;
 		padding-left:10px;
+}
+
+.subscribe-button{
+	background: url('images/Button-Home-Signup.png');
+	height: 51px;
+	width: 183px;
+	border: 0px;
+	border-radius: 7px;
+	color: #333333;
+	float: right;
+	margin: -3px 187px 57px 0px;
 }
 
 .mc_embed_signup
@@ -637,7 +660,7 @@ text-align: right;
 	background: url("../style/images/sidenav-home-light.png");
 }
 
-#home.hover 
+#home:hover 
 {
 	display: block;
 	width: 70px;
@@ -654,7 +677,7 @@ text-align: right;
 	background: url("../style/images/sidenav-howitworks-light.png");
 }
 
-#how-it-works.hover 
+#how-it-works:hover 
 {
 	display: block;
 	width: 153px;
@@ -671,7 +694,7 @@ text-align: right;
 	background: url("../style/images/sidenav-theshirts-light.png");
 }
 
-#the-shirts.hover 
+#the-shirts:hover 
 {
 	display: block;
 	width: 114px;
@@ -688,7 +711,7 @@ text-align: right;
 	background: url("../style/images/sidenav-faq-light.png");
 }
 
-#faq.hover 
+#faq:hover 
 {
 	display: block;
 	width: 38px;
@@ -705,7 +728,8 @@ text-align: right;
 	background: url("../style/images/sidenav-contact-light.png");
 }
 
-#contact-sidenav.hover 
+#contact-sidenav:hover 
+
 {
 	display: block;
 	width: 88px;
@@ -722,7 +746,7 @@ text-align: right;
 	background: url("../style/images/topnav-contact-light.png");
 }
 
-#contact-topnav.hover 
+#contact-topnav:hover 
 {
 	display: block;
 	width: 76px;
@@ -739,7 +763,8 @@ text-align: right;
 	background: url("../style/images/topnav-subscribe-light.png");
 }
 
-#subscribe-topnav.hover 
+#subscribe-topnav:hover 
+
 {
 	display: block;
 	width: 98px;
@@ -757,7 +782,7 @@ text-align: right;
 	background: url("../style/images/topnav-myorder-light.png");
 }
 
-#my-order.hover 
+#my-order:hover 
 {
 	margin-top: 2px;
 	display: block;
@@ -776,7 +801,7 @@ text-align: right;
 	background: url("../style/images/bottomnav-facebook-light.png");
 }
 
-#facebook.hover 
+#facebook:hover 
 {
 	margin-top: 1px;
 	display: block;
@@ -795,7 +820,7 @@ text-align: right;
 	background: url("../style/images/bottomnav-twitter-light.png");
 }
 
-#twitter.hover 
+#twitter:hover 
 {
 	margin-top: 1px;
 	display: block;
@@ -813,7 +838,7 @@ text-align: right;
 	background: url("../style/images/bottomnav-foundersblog-light.png");
 }
 
-#founders-blog.hover 
+#founders-blog:hover 
 {
 	display: block;
 	width: 145px;
