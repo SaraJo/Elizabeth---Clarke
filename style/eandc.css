@@ -44,6 +44,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-border-radius: 30px;
 	-webkit-border-radius: 30px;
 	box-shadow: 8px 8px 15px #9b9696;
+	-moz-box-shadow: 8px 8px 15px #9b9696;
+	-webkit-box-shadow: 8px 8px 15px #9b9696;
 }
 
 .shirts-image1
@@ -83,7 +85,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border-radius: 30px;	
 }
 
-.shirts-image{
+.shirts-image
+{
 	float: right;
 	position: relative;
 	display: inline-block;
@@ -96,10 +99,16 @@ src: url(fonts/Numbers/Numbers Delancey);
 	padding: 0px 126px 0px 0px	
 }
 
-#subscribe-addtocart{
-	padding-left: 285px;
-	padding-top: 85px;
+#subscribe-theshirts
+{
+	margin: -10px 0 30px 572px;
 }
+
+#subscribe-addtocart
+{
+	margin: 35px 0 10px 270px;
+}
+
 #slideshow #pictures 
 {
 	width: 926px;
@@ -193,7 +202,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 #slideshow #pictures .subscribe-small 
 {
     height:51px;
-    width:228px;
+    width:222px;
     position:absolute;
 	margin-right:33px;
     margin-bottom:22px;
@@ -207,7 +216,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 #slideshow #pictures .subscribe-small:hover 
 {
 	height:51px;
-    width:228px;
+    width:222px;
     position:absolute;
 	margin-right:33px;
 	margin-bottom:22px;
@@ -453,7 +462,18 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width:926px;
 	float:right;
 	display: inline;
-	margin: 20px 129px 20px 0;
+	margin: 20px 129px 10px 0;
+}
+
+.home
+{
+	margin-top: 0px;
+}
+
+.howitworks
+{
+	margin-top: 0px;
+	margin-bottom: 35px;
 }
 
 .contactus-form
@@ -523,11 +543,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	background: url("../style/images/Button-ContactUs.png");
 }
 
-.howitworks
-{
-	margin-top: 0px;
-}
-
 #sign-up
 {
 	font-family: Museo300;
@@ -573,6 +588,8 @@ button
 	float: right;
 	margin: -52px 128px 57px 0px;
 	box-shadow: 5px 5px 8px #9b9696;
+	-moz-box-shadow: 5px 5px 8px #9b9696;
+	-webkit-box-shadow: 5px 5px 8px #9b9696;
 }
 
 .mc_embed_signup
