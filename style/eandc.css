@@ -488,7 +488,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width: 350px;
 }
 
-#contactus-name
+.contactus-name
 {
 	font-family: Museo300;
 	font-size:22pt;
@@ -505,7 +505,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border: none;
 }
 
-#contactus-email
+.contactus-email
 {
 	font-family: Museo300;
 	font-size:22pt;
@@ -522,7 +522,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border: none;
 }
 
-#contactus-message
+.contactus-message
 {
 	font-family: Museo300;
 	font-size:22pt;
@@ -541,11 +541,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border:none;
 }
 
-#contactus-message:focus{
+.contactus-message:focus{
     border: 2px solid #900;
 }
 
-#send-message
+.send-message
 {
 	width: 248px;
 	height: 68px;
