@@ -625,9 +625,8 @@ button
 
 #totals span
 {
-	right: 0;
-	position: absolute;
-	padding-right:200px;
+	float: right;
+	padding-right: 142px;
 }
 
 #try-on
