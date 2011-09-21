@@ -617,7 +617,7 @@ button
 #align{
 	float:right;
 	width: 300px;
-	padding-right: 158px;
+	padding-right: 135px;
 }
 .subscribe-now
 {
@@ -629,13 +629,18 @@ button
 
 #totals span
 {
-<<<<<<< HEAD
-	float: right;
-	padding-right: 142px;
-=======
-	padding-right:142px;
+	margin-right:160px;
 	float:right;
->>>>>>> c44361669c8cd38b71a591f2f2790cea16273cc8
+	display: inline;
+}
+
+#box-selection
+{
+	float:right;
+	width: 300px;
+	margin-top: -10px;
+	padding-right:28px;	
+	display:inline;
 }
 
 #try-on
@@ -669,6 +674,8 @@ button
 	width:40%;
 	margin:0 auto;
 	float:right;
+	margin-top: -15px;
+	margin-right: -350px;
 	line-height: 150%;
 }
 

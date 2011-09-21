@@ -110,11 +110,19 @@ function clearall(){
       <div class="space" style="float:left; padding-left:320px"></div>
     </div>
     <div class="contain">
-     <p id="totals">
-          subtotal<span id="subtotal">$0.00</span><br>
-          shipping<span id="shipping">free</span><br>
-          taxes<span id="taxes">included</span><br>
-          total<span id="total">$0.00</span><br>
+		<p id="box-selection">	
+			<select name="os0" class="styled">
+        		<option value="one-season">one season</option>
+       			<option value="two-seasons">two seasons</option>
+       			<option value="four-seasons">four seasons</option>
+       		</select>
+		</p>		
+		<p id="totals">
+        	box<span id="box-selection"></span><br>  
+			subtotal<span id="subtotal">$0.00</span><br>
+          	shipping<span id="shipping">free</span><br>
+          	taxes<span id="taxes">included</span><br>
+          	total<span id="total">$0.00</span><br>
           </p>
             <p id="try-on">
             <img src="style/images/Subscribe-HomeTryOn.png" id="try-on-img"/> </p>
@@ -125,11 +133,11 @@ function clearall(){
             <input type="hidden" name="hosted_button_id" value="FRN8727LE3WHY">
             <div id="align">
             <table>
-            <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0" class="styled">
-            	<option value="X-Small">X-Small (size 0-2)</option>
-            	<option value="Small">Small (size 2-4)</option>
-            	<option value="Medium">Medium (size 4-6)</option>
-            	<option value="Large">Large (size 6-8)</option>
+            <tr><td><input type="hidden" name="on0" value="Sizes">size</td></tr><tr><td><select name="os0" class="styled">
+            	<option value="X-Small">x-small (size 0-2)</option>
+            	<option value="Small">small (size 2-4)</option>
+            	<option value="Medium">medium (size 4-6)</option>
+            	<option value="Large">large (size 6-8)</option>
             </select> </td></tr>
             </table>
             <input type="hidden" name="currency_code" value="USD">
