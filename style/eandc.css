@@ -228,9 +228,9 @@ src: url(fonts/Numbers/Numbers Delancey);
 #loading
 {
 	position:absolute;
-	z-index: -1;
-	padding-left:375px;
-	padding-top:100px;
+	z-index: 1;
+	padding-left:335px;
+	padding-top:120px;
 }
 
 .side-menu
