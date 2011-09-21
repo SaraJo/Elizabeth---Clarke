@@ -118,6 +118,7 @@ src: url(fonts/Numbers/Numbers Delancey);
     z-index: 1;
     position: absolute;
 	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
 	border-radius: 30px;
 	-moz-box-shadow: 15px 15px 25px #666;
 	-webkit-box-shadow: 15px 15px 25px #666;
