@@ -46,6 +46,26 @@ function mouseOutS4(){
   $("#four-season-img").attr("src", 'style/images/Subscribe-FourSeasons.png');
 }
 
+$(document).ready(function(){
+  $('#season-select').change(function(){
+      clearall();
+      var season = $('#season-select').val();
+      switch(season){
+        case "one-season":
+          clickS1();
+          break;
+        case "two-seasons":
+          clickS2();
+          break; 
+        case "four-seasons":
+           clickS4();
+           break;
+        default:
+          clickS3();
+          break;
+      } 
+  });
+});
 function clickS1(){
   clearall();
   selected = 1;
@@ -55,6 +75,8 @@ function clickS1(){
   document.getElementsByName("hosted_button_id")[0].value = "XHNSDALHSSTTS";
   $("#total").html("$87.00");
   $("#subtotal").html("$87.00");
+  $('#season-select').val("one-season");
+  $('#selectos0').text("one season");
 }
 function clickS2(){
   clearall();
@@ -65,7 +87,8 @@ function clickS2(){
   document.getElementsByName("hosted_button_id")[0].value = "FRN8727LE3WHY";
   $("#total").html("$149.00");
   $("#subtotal").html("$149.00");
-  
+  $('#season-select').val("two-seasons");
+  $('#selectos0').text("two seasons");
 }
 function clickS4(){
   clearall();
@@ -76,6 +99,8 @@ function clickS4(){
   document.getElementsByName("hosted_button_id")[0].value = "BCVQXP76F3Z4E";
   $("#total").html("$239.00");
   $("#subtotal").html("$239.00");
+  $('#season-select').val("four-seasons");
+  $('#selectos0').text("four seasons");
 }
 
 function clearall(){
@@ -114,20 +139,20 @@ function clearall(){
       <div class="space" style="float:left; padding-left:320px"></div>
     </div>
     <div class="contain">
-     <p id="totals">
-         	box<span id="box-selection"></span><br>  
- 			subtotal<span id="subtotal">$0.00</span><br>
-           	shipping<span id="shipping">free</span><br>
-           	taxes<span id="taxes">included</span><br>
-           	total<span id="total">$0.00</span><br></p>
+    
 		<p id="box-selection">	
-			<select name="os0" class="styled">
+			<select name="os0" id="season-select" class="styled" >
         		<option value="one-season">one season</option>
        			<option value="two-seasons">two seasons</option>
        			<option value="four-seasons">four seasons</option>
        		</select>
 		</p>		
-	
+	   <p id="totals">
+         	box<span class="glow" id="box-selection"></span><br>  
+ 			subtotal<span class="glow" id="subtotal">$0.00</span><br>
+           	shipping<span id="shipping">free</span><br>
+           	taxes<span id="taxes">included</span><br>
+           	total<span class="glow"id="total">$0.00</span><br></p>
             <p id="try-on">
             <img src="style/images/Subscribe-HomeTryOn.png" id="try-on-img"/> </p>
            
