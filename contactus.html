@@ -10,6 +10,7 @@
 <script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
 <script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
+<script src="scripts/wufoo.js"></script>
 <script type="text/javascript">
  window.addEvent('domready', function(){
    HTMLElement.prototype.click = function() {
@@ -44,15 +45,67 @@ function mouseOverSmall(){
        	<li><a id="faq" href="faq.html"></a></li>
        	<li><a id="contact-sidenav" href="contactus.html"></a></li>
      </ul>
+
 	<div class="answer">
+
 	<div>
-	<form>
+
+		<form 
+		id="form1" 
+		name="form1" 
+		class="wufoo topLabel page" 
+		autocomplete="off" 
+		enctype="multipart/form-data" 
+		method="post" 
+		novalidate action="https://elizabethandclarke.wufoo.com/forms/z7x3k1/#public">
+
 	<div class="contactus-form">
-		<input type="full-name" value="" name="full-name" placeholder=" full name" class="required-name" id="contactus-name"/>
-		<input type="email" value="" name="email" placeholder=" email" class="required-email" id="contactus-email"/>
-		<textarea type="message" value="" name="message" placeholder=" message" class="required-message" id="contactus-message"></textarea>
-		<input type="submit" name="send-message" value="" id="send-message">
-	</div>		
+
+		<input 
+		type="full-name" 
+		value="" 
+		name="full-name" 
+		placeholder=" full name" 
+		class="required-name" 
+		id="contactus-name" 
+		tabindex="1"/>
+		
+		<input 
+		type="email" 
+		value="" 
+		name="email" 
+		placeholder=" email" 
+		class="required-email" 
+		id="contactus-email" 
+		tabindex="2" 
+		maxlength="255" 
+		spellcheck="false"/>
+		
+		<textarea 
+		type="message" 
+
+		spellcheck="true" 
+		name="message" 
+		placeholder=" message"  
+		id="contactus-message" 
+		tabindex="3">
+		</textarea>
+			
+		<input 
+		type="submit" 
+		name="send-message" 
+		value="" 
+		id="send-message"
+		class="btTxt submit">
+	</div>
+	
+	<li class="hide">
+	<label for="comment">Do Not Fill This Out</label>
+	<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+	<input type="hidden" id="idstamp" name="idstamp" value="KmAKCrJihRfh8es72yHRMUk3rhdKejEv+RG3G6RcdEY=" />
+	</li>
+	</ul>
+			
 	</form>		
 			<div class="call-us-contactus">
 				<p>call us</p> 

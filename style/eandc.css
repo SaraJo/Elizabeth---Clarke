@@ -391,6 +391,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	display: inline-block;
 	width: 650px;
 	margin-top: -50px;
+	color: ;
 }
 .header
 {
@@ -459,6 +460,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	margin-right: 129px;
 	margin-bottom: 40px;
 }
+
 .copy
 {
 	font-family: Museo300;
@@ -490,7 +492,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	font-family: Museo300;
 	font-size:22pt;
-	color:#dbd5cf;
+	color:#666460;
 	float:left;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -507,7 +509,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	font-family: Museo300;
 	font-size:22pt;
-	color:#dbd5cf;
+	color:#666460;
 	float:left;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -524,7 +526,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	font-family: Museo300;
 	font-size:22pt;
-	color:#dbd5cf;
+	color:#666460;
 	float:left;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -535,6 +537,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 	box-shadow:inset 3px 3px 8px #9b9696; 
 	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
 	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
+	overflow: auto;
+	border:none;
+}
+
+#contactus-message:focus{
+    border: 2px solid #900;
 }
 
 #send-message
@@ -674,9 +682,22 @@ button
 	width:40%;
 	margin:0 auto;
 	float:right;
-	margin-top: -15px;
+	margin-top: -14px;
 	margin-right: -350px;
 	line-height: 150%;
+}
+
+.hideHeader .info, #payment.hideHeader li.first
+{
+	display:none;
+}
+
+.hideMarkers .marker, .nopagelabel .pgStyle1 b, .nopagelabel .pgStyle2 em{
+	display:none !important;
+}
+
+.hide{
+	display:none;
 }
 
 body 
@@ -729,6 +750,15 @@ width:200px;
 .table ul li.col2
 {
 width:200px;
+text-align: right;
+}
+.table ul li.col3
+{
+width:100px;
+}
+.table ul li.col4
+{
+width:50px;
 text-align: right;
 }
 
