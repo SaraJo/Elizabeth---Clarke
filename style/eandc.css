@@ -21,6 +21,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 #content{
 	width: 1390px; 
+	margin:0 auto;
 }
 #season-options
 {
@@ -278,8 +279,9 @@ src: url(fonts/Numbers/Numbers Delancey);
 	list-style:none;
 	color:#bab4b0;
 	margin:0 auto;
-	width:600px;
-	text-align: center;
+	width:100%;
+	text-align: center;   
+	bottom:0;
 }
 
 .bottom-menu ul{
@@ -359,6 +361,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	margin-right: 270px;
 	margin-top: -300px;
 }
+
 .email-us
 {
 	font-size: 20pt;
@@ -369,6 +372,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	margin-left: 280px;
 	margin-top: -40px;
 }
+
 .email-us-contactus
 {
 	font-size: 24pt;
@@ -543,7 +547,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	font-family: Museo300;
 	font-size:24pt;
-	color:#dbd5cf;
+	color:#666460;
 	float:left;
 	margin-left:635px;
 	margin-top: -52px;
