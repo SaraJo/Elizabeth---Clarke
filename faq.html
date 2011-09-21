@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><!-- <!DOCTYPE HTML> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
  <html>​
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -17,6 +17,7 @@
    evt.initMouseEvent('click', true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
    this.dispatchEvent(evt);
 };
+});
 
 function mouseOverSmall(){
   alert("mouseover");
@@ -25,8 +26,7 @@ function mouseOverSmall(){
 </head>
 <body id="demo">    
     <div id="content">
-     <a href="index.html"><img src="style/images/ElizabethANDClarkeLogo.jpg"  class="logo"/></a>
-    
+      <a href="index.html"><img src="style/images/ElizabethANDClarkeLogo.jpg" href="index.html" class="logo"/></a>
 	    <div class="top-menu"><ul>
     		<li><a id="contact-topnav" href="contactus.html"></a></li>
     		<li><a id="subscribe-topnav" href="addtocart.html"></a></li>
@@ -223,15 +223,16 @@ function mouseOverSmall(){
 				or email us
 				<p>info@elizabethandclarke.com</p>
 			</div>
-	</div>	
-	  <ul class="bottom-menu">
-      <li><a id="facebook" href="http://www.facebook.com/pages/Elizabeth-Clarke/271444709548359"></a></li>
-      <li><a id="twitter" href="http://www.twitter.com/perfect_basics"></a></li>
-      <li><a id="contact-topnav" href="contactus.html"></a></li>
-      <li><a id="founders-blog" href="http://www.melanie.io"></a></li>
-    </ul>
 	</div>
-
+	</div>	
+	  
+	</div>
+  <ul class="bottom-menu">
+    <li><a id="facebook" href="http://www.facebook.com/pages/Elizabeth-Clarke/271444709548359"></a></li>
+    <li><a id="twitter" href="http://www.twitter.com/perfect_basics"></a></li>
+    <li><a id="contact-topnav" href="contactus.html"></a></li>
+    <li><a id="founders-blog" href="http://www.melanie.io"></a></li>
+  </ul>
    
 </body>
  <script type="text/javascript">

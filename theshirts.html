@@ -7,9 +7,18 @@
   <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
 
 </head>
+<script>
+function mouseOverBtn(){
+  document.getElementById("subscribe-theshirts").src='style/images/Button-HowItWorks-Dark.png';
+}
+
+function mouseOutBtn(){
+  document.getElementById("subscribe-theshirts").src='style/images/Button-HowItWorks-Light.png';
+}
+</script>
 <body id="demo">    
     <div id="content">
-      <img src="style/images/ElizabethANDClarkeLogo.jpg" class="logo"/>
+      <a href="index.html"><img src="style/images/ElizabethANDClarkeLogo.jpg" class="logo"/></a>
       <div class="top-menu"><ul>
     		<li><a id="contact-topnav" href="contactus.html"></a></li>
     		<li><a id="subscribe-topnav" href="addtocart.html"></a></li>
@@ -23,8 +32,8 @@
             	<li><a id="faq" href="faq.html"></a></li>
             	<li><a id="contact-sidenav" href="contactus.html"></a></li>
           </ul>
-    <div class="shirts">    
-     <img src="style/images/TheShirts-Image0.png" alt="Shirts"/>
+    <div>    
+     <img src="style/images/TheShirts-Image0.png" class="shirts" alt="Shirts"/>
     </div>
     <div class="copy">
       <p>when Raf Simmons sent his models down the SS11 Jil Sander runway in glamorous floor-skimming skirts teamed with understand white tees (above), the humble white T-shirt was     instantly imbued with high-fashion status</p>
@@ -37,6 +46,10 @@
     </div>
 
 	 <img src="style/images/TheShirts-Image1.png" class="shirts-image1" alt="Shirts"/>
+	
+	 <a href="addtocart.html" >
+          <img src="style/images/Button-HowItWorks-Light.png" id="subscribe-theshirts" onMouseOver="mouseOverBtn()" onMouseOut="mouseOutBtn()" />
+     </a>
   
       <ul class="bottom-menu">
         <li><a id="facebook" href="http://www.facebook.com/pages/Elizabeth-Clarke/271444709548359"></a></li>
