@@ -31,6 +31,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 #season-options img
 {
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
 	border-radius:30px;
 }
 
@@ -528,6 +530,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-size:22pt;
 	color:#666460;
 	float:left;
+	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	margin-top: 20px;
@@ -542,7 +545,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 
 #contactus-message:focus{
-    border: 2px solid #900;
+	text-align: left;
 }
 
 #send-message
@@ -760,6 +763,11 @@ width:100px;
 {
 width:50px;
 text-align: right;
+}
+.table ul li.col5
+{
+width:900px;
+text-align: left;
 }
 
 #home
