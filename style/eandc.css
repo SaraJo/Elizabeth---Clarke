@@ -20,7 +20,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 
 #content{
-	width: 1390px; 
+	width: 1310px; 
 	margin:0 auto;
 }
 #season-options
@@ -39,8 +39,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 .shirts
 {
 	float: right;
-	width: 926px;
-	height: 335px;
+	width: 916px;
+	height: 330px;
 	margin-right: 128px;
 	margin-top: 50px;
 	border-radius: 30px;
@@ -54,7 +54,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 .shirts-image1
 {
 	float: right;
-	width: 926px;
+	width: 916px;
 	height: 418px;
 	margin-right: 128px;
 	margin-bottom: 50px;
@@ -104,7 +104,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 #subscribe-theshirts
 {
-	margin: -10px 0 30px 572px;
+	margin: -5px 0 30px 550px;
 }
 
 #subscribe-addtocart
@@ -239,7 +239,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 .side-menu
 {
-	width:20%;
+	width:15%;
 	float:left;
 	font-family:'Copse', serif;
 	color:#bab4b0;
@@ -262,7 +262,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	width: 350px;
 	float: right;
-	margin-right: 129px;
+	margin-right: 127px;
 	margin-top: 43px;
 }
 .top-menu ul
@@ -400,10 +400,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-family: Museo300;
 	font-size:24pt;
 	color: #666460;
-	width:926px;
+	width:910px;
 	float:right;
 	display: inline;
-	margin-right: 127px;
+	margin-right: 143px;
 	margin-top: 55px;
 }
 .bottom-header
@@ -422,8 +422,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 .divider-line
 {
-	width:926px;
-	padding: 20px 0 20px 0;
+	width:910px;
+	padding: 20px 16px 20px 0;
 	float:right;
 	display: inline;
 }
@@ -468,10 +468,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-family: Museo300;
 	font-size:14pt;
 	color: #666460;
-	width:926px;
+	width:910px;
 	float:right;
 	display: inline;
-	margin: 20px 129px 10px 0;
+	margin: 20px 135px 10px 0;
 }
 
 .home
@@ -565,7 +565,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-size:24pt;
 	float:left;
 	margin-top: -38px;
-	padding-left:332px;
+	padding-left:262px;
 	color: #736f6c;
 	-webkit-font-smoothing: antialiased;
 }
@@ -576,11 +576,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-size:24pt;
 	color:#666460;
 	float:left;
-	margin-left:635px;
+	margin-left:565px;
 	margin-top: -52px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	width:420px;
+	width:415px;
 	height:49px;
 	box-shadow:inset 3px 3px 8px #9b9696; 
 	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
@@ -590,8 +590,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 button
 {
-		float:left;
-		padding-left:10px;
+	float:left;
+	padding-left:10px;
 }
 
 .subscribe-button{
@@ -602,7 +602,7 @@ button
 	border-radius: 7px;
 	color: #333333;
 	float: right;
-	margin: -52px 128px 57px 0px;
+	margin: -54px 128px 57px 0px;
 	box-shadow: 5px 5px 8px #9b9696;
 	-moz-box-shadow: 5px 5px 8px #9b9696;
 	-webkit-box-shadow: 5px 5px 8px #9b9696;
@@ -893,7 +893,7 @@ text-align: left;
 
 #my-order
 {
-	margin-top: 2px;
+	margin-top: 1px;
 	display: block;
 	width: 96px;
 	height: 23px;
@@ -902,7 +902,7 @@ text-align: left;
 
 #my-order:hover 
 {
-	margin-top: 2px;
+	margin-top: 1px;
 	display: block;
 	width: 96px;
 	height: 23px;
