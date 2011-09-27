@@ -7,33 +7,20 @@
 			
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>Elizabeth &amp; Clarke</title>​
+  <link rel="stylesheet" href="style/eandc.css" type="text/css" media="screen" title="Stylesheet" />​
+  <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.6.4.min.js"></script>
+<script src="js/wufoo.js" charset="utf-8" type="text/javascript"></script>
 
-  	<link 	rel="stylesheet" 
-			href="style/eandc.css" 
-			type="text/css" 
-			media="screen" 
-			title="Stylesheet" />​
-			
-  	<link 	href='http://fonts.googleapis.com/css?family=Copse' 
-			rel='stylesheet' 
-			type='text/css'>
-  
-<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core-yc.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
-<script src="js/wufoo.js"></script>
 <script type="text/javascript">
- window.addEvent('domready', function(){
-   HTMLElement.prototype.click = function() {
-   var evt = this.ownerDocument.createEvent('MouseEvents');
-   evt.initMouseEvent('click', true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
-   this.dispatchEvent(evt);
-};
 
-function mouseOverSmall(){
-  alert("mouseover");
-}});
+$(document).ready(function(){
+  function resetCursor() { 
+      var txtElement = document.getElementById("Field13");
+      txtElement.value = "";
+  }
+resetCursor();
+});
 </script>
 </head>
 <body id="demo">    
@@ -77,29 +64,30 @@ function mouseOverSmall(){
 		type="full-name" 
 		value="" 
 		name="full-name" 
+		 id="Field10" name="Field10" 
 		placeholder=" full name" 
 		class="required-name contactus-name" 
-		id="Field 10" 
 		tabindex="1"/>
 		
 		<input 
 		type="email" 
 		value="" 
+		id="Field12" name="Field12" 
 		name="email" 
 		placeholder=" email" 
-		class="required-email" 
-		id="contactus-email" 
+		class="required-email contactus-email" 
 		tabindex="2" 
 		maxlength="255" 
 		spellcheck="false"/>
 		
 		<textarea 
 		type="message" 
-
+    id="Field13" 
+    name="Field13"
 		spellcheck="true" 
 		name="message" 
+		class="contactus-message"
 		placeholder=" message"  
-		id="contactus-message" 
 		tabindex="3">
 		</textarea>
 			
@@ -107,8 +95,8 @@ function mouseOverSmall(){
 		type="submit" 
 		name="send-message" 
 		value="" 
-		id="send-message"
-		class="btTxt submit">
+	  id="saveForm" name="saveForm"
+		class="btTxt submit send-message">
 	</div>
 	
 	<li class="hide">
