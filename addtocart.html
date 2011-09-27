@@ -116,7 +116,7 @@ function switchSeasons(season){
             image = $("#two-season-img");
             price = "$149.00";
             img_src='style/images/Subscribe-TwoSeasons-Selected.png';
-            select_text = "two_seasons";
+            select_text = "two seasons";
           break; 
         case "four-seasons":
            selected = 4;
@@ -134,7 +134,7 @@ function switchSeasons(season){
         $("#total").html(price);
         $("#subtotal").html(price);
         $('#season-select').val(season);
-        $('#selectos0').text(select_text);
+        $('#selectseasons').text(select_text);
         $('.glow').glow("#dbd5cf", 500); 
     }
     
@@ -178,7 +178,7 @@ function switchSeasons(season){
     <div class="contain">
     
 		<p id="box-selection">	
-			<select name="os0" id="season-select" class="styled" >
+			<select  id="season-select" name="seasons" class="styled" >
         		<option value="one-season">one season</option>
        			<option value="two-seasons">two seasons</option>
        			<option value="four-seasons">four seasons</option>
