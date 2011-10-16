@@ -26,13 +26,14 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	margin: 0;
     padding: 46px;
+	margin-left: 188px;
 }
 
 #season-options img
 {
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius:30px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius:20px;
 }
 
 .shirts
@@ -42,9 +43,9 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height: 330px;
 	margin-right: 128px;
 	margin-top: 50px;
-	border-radius: 30px;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
 	box-shadow: 8px 8px 15px #9b9696;
 	-moz-box-shadow: 8px 8px 15px #9b9696;
 	-webkit-box-shadow: 8px 8px 15px #9b9696;
@@ -83,8 +84,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height: 335px;
 	margin-left: -5px;
 	margin-top: 41px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;	
+	-moz-border-radius: 15px;
+	border-radius: 15px;	
 }
 
 .shirts-image
@@ -96,8 +97,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height: 335px;
 	margin-left: -5px;
 	margin-top: 41px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 	padding: 0px 126px 0px 0px	
 }
 
@@ -119,9 +120,9 @@ src: url(fonts/Numbers/Numbers Delancey);
     overflow: hidden;
     z-index: 1;
     position: absolute;
-	-moz-border-radius: 30px;
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
 	-moz-box-shadow: 15px 15px 25px #666;
 	-webkit-box-shadow: 15px 15px 25px #666;
 	box-shadow: 15px 15px 25px #666;
@@ -139,8 +140,8 @@ src: url(fonts/Numbers/Numbers Delancey);
     position: relative;
 	width:926px;
     bottom: 0;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 #slideshow #menu 
 {
@@ -433,8 +434,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width: 616px;
 	margin-left: 310px;
 	margin-top: 50px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 .divider-line
 {
