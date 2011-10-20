@@ -338,21 +338,21 @@ src: url(fonts/Numbers/Numbers Delancey);
 .menu-selected ul{
 	line-height: 3em;
 	font-size: 3em;
-	color: #b1aca7;
+	color: #4a4845;
 }
 
 .menu-selected a:link {
 	text-decoration: none;
 	border: none 0;
 	font-size:20pt;
-	color: #660000;
+	color: #7a7672;
 }
 
 .menu-selected a:visited {
 	text-decoration: none;
 	border: none 0;
 	font-size:20pt;
-	color: #660000;
+	color: #7a7672;
 }
 
 .logo
