@@ -28,10 +28,7 @@
 
 $(document).ready(function(){
   var selected = "";
-  var eandc = {};
-  eandc.season = 'default';
-  eandc.size = 'default';
-  $(".dropdown-panel").hide();
+  
   $("subscribe-button").mouseover(function(){
     $("#subscribe-button").attr("src", 'style/images/Button-SubscribePage-Dark.png');
   });
@@ -40,25 +37,10 @@ $(document).ready(function(){
     $("#subscribe-button").attr("src", 'style/images/Button-SubscribePage-Light.png');
   });
   
-  $("#dropdown").click(function(){
-    var panel = $(".dropdown-panel");
-    if(panel.css("display")=="none")
-      panel.fadeIn();
-    else
-      panel.fadeOut();
-  })
-  
-  $('.size-select li').click(function(){
-        eandc.size = this.id;
-       $(".dropdown-panel.size-select").fadeOut();
+  $('#season-select').change(function(){
+       var season = $('#season-select').val();
        switchSeasons(season);
    });
-   
-   $('.season-select li').click(function(){
-        eandc.season = this.id;
-        $(".dropdown-panel.season-select").fadeOut();
-        switchSeasons(season);
-    });
   
   $("#season-options img").mouseover(function(){
      var id = this.id;
@@ -104,7 +86,7 @@ $(document).ready(function(){
        switch(id)
        {
          case "one-season-img":
-          
+          switchSeasons("one-season");
           break;
          case "two-season-img":
           switchSeasons("two-seasons");
@@ -116,10 +98,10 @@ $(document).ready(function(){
     });
   
   
-function switchSeasons(){
+function switchSeasons(season){
       clearall();
       var image, button_value, price, img_src, select_text;
-      switch(eandc.season){
+      switch(season){
         case "one-season":
           selected = 1;
           image = $("#one-season-img");
@@ -206,17 +188,14 @@ function switchSeasons(){
     </div>
     <div class="contain">
     
-		  <div id="dropdown">
-		  <div class="dropdown-image">
-            please select a season
-      </div>
-      <ul class="dropdown-panel season-select">
-			  <li id="one_season">one season</li>
-			  <li id="two_seasons">two seasons</li>
-			  <li id="four_seasons">four seasons</li>
-			</ul>
-			</div>
-				
+		<p id="box-selection">	
+			<select  id="season-select" name="seasons" class="styled" >
+			      <option value="default">please select a box</option>
+        		<option value="one-season">one season</option>
+       			<option value="two-seasons">two seasons</option>
+       			<option value="four-seasons">four seasons</option>
+       		</select>
+		</p>		
 	   <p id="totals">
          	box<span class="glow" id="box-selection"></span><br>  
  			subtotal<span class="glow" id="subtotal">$0.00</span><br>
@@ -227,22 +206,24 @@ function switchSeasons(){
             <img src="style/images/Subscribe-HomeTryOn.png" id="try-on-img"/> </p>
            
             <form action="https://www.paypal.com/cgi-bin/webscr" class="subscribe-now" method="post">
-            <img src="style/images/Subscribe-DontWait.png"  id="dont-wait"/>
+              <img src="style/images/Subscribe-DontWait.png"  id="dont-wait"/>
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="FRN8727LE3WHY">
             <div id="align">
-            <ul id="size-select">
-            	<li id="X-Small">x-small (size 0-2)</li>
-            	<li id="Small">small (size 2-4)</li>
-            	<li id="Medium">medium (size 4-6)</li>
-            	<li id="Large">large (size 6-8)</li>
-           </ul>
+            <table>
+            <tr><td><input type="hidden" name="on0" value="Sizes">size</td></tr><tr><td><select name="os0" class="styled">
+            	<option value="X-Small">x-small (size 0-2)</option>
+            	<option value="Small">small (size 2-4)</option>
+            	<option value="Medium">medium (size 4-6)</option>
+            	<option value="Large">large (size 6-8)</option>
+            </select> </td></tr>
+            </table>
             <input type="hidden" name="currency_code" value="USD">
             <input type="image" id="subscribe-button" src="style/images/Button-SubscribePage-Light.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
             </div>
             </form>
-</p>
+
         
     </div>
     <div id="clear"></div>
