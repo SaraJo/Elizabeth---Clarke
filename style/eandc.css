@@ -1184,3 +1184,25 @@ text-align: left;
 #clear{
 	clear:both;
 }
+
+#confirmation-page{
+	text-align: center;
+}
+
+#email-to{
+	text-decoration: none;
+}
+#email-to.visted{
+	text-decoration: none;
+}
+.fb-like-box{
+	height: 200px;
+	width: 200px;
+	color: black;
+}
+.twitter-share-button{
+	margin: 100px;
+	height: 200px;
+	width: 200px;
+	color: black;
+}
