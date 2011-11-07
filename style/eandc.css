@@ -1141,12 +1141,23 @@ button
 	float:right;
 }
 #dont-wait{
-	padding-left:40px;
+	padding-left:210px;
+	font-size: 23pt;
+	display: inline;
+}
+#dont-wait-text{
+	margin-left:-15px;
+	font-size: 19pt;
+	display: block;
+	text-align: center;
+	width: 715px;
+	line-height: 35px;
 }
 #align{
 	float:right;
 	width: 300px;
 	padding-right: 135px;
+	margin-top: -155px;
 }
 .subscribe-now
 {
@@ -1174,10 +1185,23 @@ button
 
 #try-on
 {
-	width:50%;
+	width:620px;
 	margin:0 auto;
 	float:left;
 	padding-left: 40px;
+	font-size: 23pt;
+	text-align: center;
+}
+
+#try-on-text
+{
+	width:500px;
+	margin:0 auto;
+	float:left;
+	padding-left: 105px;
+	font-size: 19pt;
+	line-height: 35px;
+	text-align: center;
 }
 
 .space
@@ -1290,4 +1314,30 @@ text-align: left;
 
 #clear{
 	clear:both;
+}
+
+#confirmation-page{
+	text-align: center;
+}
+
+#email-to{
+	text-decoration: none;
+}
+#email-to.visted{
+	text-decoration: none;
+}
+.fb-like-box{
+	margin-left: 110px;
+	margin-top: -5px;
+	height: 113px;
+	width: 300px;
+	background: url('http://s3.amazonaws.com/ElizabethandClarke/Button-Facebook.png');
+}
+.twitter-share-button{
+	height: 113px;
+	width: 300px;
+	margin-left: 470px;
+	margin-top: -115px;
+	display: block;
+	font-family: 'Copse';
 }
