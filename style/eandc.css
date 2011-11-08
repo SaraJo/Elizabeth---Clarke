@@ -353,7 +353,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	box-shadow: 3px 3px 15px #777;
 	-moz-box-shadow: 3px 3px 15px #777;
 	-webkit-box-shadow: 3px 3px 15px #777;
-	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -383,7 +382,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	box-shadow: inset 2px 2px 10px #000000;
-	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -465,13 +463,13 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 #slideshow #pictures .subscribe 
 {
+  	height:66px;
+    width:212px;
     position:absolute;
-	margin-left:600px;
-	margin-top:210px;
+	margin-left:440px;
+	margin-top:160px;
     float:right;
     z-index: 10;
-	width: 252px;
-	height: 91px;
 	display: inline-block;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -479,7 +477,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-box-shadow: 3px 3px 12px #444;
 	-webkit-box-shadow: 3px 3px 12px #444;
 	text-decoration: none;
-	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -497,10 +494,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 #slideshow #pictures .subscribe:hover 
 {
-    height:81px;
-    width:232px;
+    height:66px;
+    width:212px;
     position:absolute;
-	margin-left:500px;
+	margin-left:440px;
 	margin-top:160px;
     float:right;
 	cursor:pointer;
@@ -509,7 +506,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-border-radius: 8px;
 	box-shadow: inset 2px 2px 10px #000000;
 	text-decoration: none;
-	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -525,11 +521,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: white;
 	text-decoration: none;
 	font-family: 'Didot HTF';
-	font-size: 24pt;
+	font-size: 20pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 19px 0 0 25px;
+	margin: 10px 0 0 21px;
 	position: absolute;
 }
 
@@ -538,11 +534,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: white;
 	text-decoration: none;
 	font-family: 'Didot HTF';
-	font-size: 24pt;
+	font-size: 20pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 51px 0 0 27px;
+	margin: 38px 0 0 23px;
 	position: absolute;
 }
 
@@ -552,7 +548,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height:42px;
     width:200px;
     position:absolute;
-	margin-right:33px;
+	margin-right:25px;
     margin-bottom:22px;
     float:right;
 	right:0;
@@ -565,7 +561,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-box-shadow: 2px 1px 10px #222;
 	-webkit-box-shadow: 2px 1px 10px #222;
 	text-decoration: none;
-	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -586,17 +581,15 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height:42px;
     width:200px;
     position:absolute;
-	margin-right:33px;
+	margin-right:25px;
 	margin-bottom:22px;
     float:right;
     cursor:pointer;
-
 	display: inline-block;
 	border-radius: 7px;
 	-moz-border-radius: 7px;
 	box-shadow: inset 2px 2px 10px #000000;
 	border:none;
-	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -605,7 +598,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
 	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
-	
 }
 
 #subscribe-text-small{
@@ -613,11 +605,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: white;
 	text-decoration: none;
 	font-family: 'Didot HTF';
-	font-size: 15pt;
+	font-size: 13pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 5px 0 0 20px;
+	margin: 2px 0 0 16px;
 	position: absolute;
 }
 
@@ -626,11 +618,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: white;
 	text-decoration: none;
 	font-family: 'Didot HTF';
-	font-size: 15pt;
+	font-size: 13pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 26px 0 0 21px;
+	margin: 22px 0 0 17px;
 	position: absolute;
 }
 
@@ -638,8 +630,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	position:absolute;
 	z-index: 1;
-	padding-left:335px;
-	padding-top:120px;
+	padding-left:210px;
+	padding-top:100px;
 }
 
 .side-menu
