@@ -660,7 +660,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width: 450px;
 	float: right;
 	margin-right: 127px;
-	margin-top: 43px;
+	margin-top: -87px;
 }
 .top-menu ul
 {
@@ -762,10 +762,27 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 .logo
 {
-	height:70px; 
-	padding-left:22px;
+ 	margin-left: -43px;
 	float:left;
-	display: inline;
+	display: inline-block;
+	height: 131px;
+	width: 520px;
+}
+
+.quotes
+{
+	font-family: 'Helvetica';
+	-webkit-font-smoothing: antialiased;
+	list-style-type: none;
+	font-size: 8pt;
+	color: #232323;
+	display: inline-block;
+	margin-top: 71px;
+	margin-left: -427px;
+	text-align: left;
+	width: 230px;
+	line-height: 11pt;
+	text-transform: uppercase;
 }
 
 .phone
