@@ -76,7 +76,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 .menu-slides
 {
 	width:100%;
-	height:400px;
+	height:300px;
 	display:inline-block;
 }
 
@@ -521,7 +521,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: white;
 	text-decoration: none;
 	font-family: 'Didot HTF';
-	font-size: 20pt;
+	font-size: 18pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -534,11 +534,11 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: white;
 	text-decoration: none;
 	font-family: 'Didot HTF';
-	font-size: 20pt;
+	font-size: 16pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 38px 0 0 23px;
+	margin: 34px 0 0 23px;
 	position: absolute;
 }
 
@@ -942,12 +942,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 .copy
 {
 	font-family: Museo300;
-	font-size:14pt;
+	font-size:13pt;
 	color: #666460;
-	width:910px;
+	width:680px;
 	float:right;
 	display: inline;
-	margin: 20px 135px 10px 0;
+	margin: 0px 135px 10px 0;
 }
 
 .home
@@ -1037,29 +1037,29 @@ src: url(fonts/Numbers/Numbers Delancey);
 #sign-up
 {
 	font-family: Museo300;
-	font-size:24pt;
-	float:left;
+	font-size: 20pt;
+	float: left;
 	margin-top: -38px;
-	padding-left:262px;
-	color: #736f6c;
+	padding-left: 182px;
+	color: #736F6C;
 	-webkit-font-smoothing: antialiased;
 }
 
 #mce-EMAIL
 {
 	font-family: Museo300;
-	font-size:24pt;
-	color:#666460;
-	float:left;
-	margin-left:565px;
-	margin-top: -52px;
+	font-size: 20pt;
+	color: #666460;
+	float: left;
+	margin-left: 435px;
+	margin-top: -51px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	width:415px;
-	height:49px;
-	box-shadow:inset 3px 3px 8px #9b9696; 
-	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
-	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
+	width: 340px;
+	height: 35px;
+	box-shadow: inset 3px 3px 8px #9b9696;
+	-moz-box-shadow: inset 3px 3px 8px #9b9696;
+	-webkit-box-shadow: inset 3px 3px 8px #9b9696;
 	border: none;
 }
 
