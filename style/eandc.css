@@ -636,7 +636,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 .side-menu
 {
-	width:12%;
+	width:13%;
 	float:left;
 	padding-left:35px;
 	padding-top: 35px;
@@ -650,6 +650,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 .top-menu
 {
 	width: 450px;
+	height: 70px;
 	float: right;
 	margin-right: 127px;
 	margin-top: -87px;
@@ -793,6 +794,14 @@ src: url(fonts/Numbers/Numbers Delancey);
 	height: 30px;
 	text-transform: uppercase;
 	position: absolute;
+}
+
+.shopping-bag
+{
+	height: 139px;
+	width: 110px;
+	margin-top: -40px;
+	margin-right: -15px;
 }
 
 .phone
