@@ -73,12 +73,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width:80%;
 }
 
-.menu-slides
-{
-	width:100%;
-	height:300px;
-	display:inline-block;
-}
 
 #slideshow, #images 
 {
@@ -637,12 +631,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 .side-menu
 {
 	width:13%;
-	float:left;
-	padding-left:35px;
-	padding-top: 35px;
 }
 .side-menu li
 {
+	float:right;
 	list-style-type:none;
 	padding-bottom:40px;
 }
@@ -693,13 +685,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-webkit-font-smoothing: antialiased;
 	list-style-type: none;
 	text-shadow: #fff 0px 1px 1px, #817d7a 0 -1px 1px;
-}
-
-.inset ul{
+	float:left;
 	line-height: 3em;
 	font-size: 3em;
 	color: #b1aca7;
 }
+
 
 .inset a:link {
 	text-decoration: none;
@@ -725,6 +716,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border: none 0;
 	color: #94908b;
 }
+
 
 .menu-selected{
 	font-family: 'Copse', serif;
