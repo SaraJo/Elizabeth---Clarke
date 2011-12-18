@@ -1,5 +1,75 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><!-- <!DOCTYPE HTML> -->
+  <html>​
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Elizabeth &amp; Clarke</title>​
+  <link rel="stylesheet" href="style/eandc.css" type="text/css" media="screen" title="Stylesheet" />​
+  <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+  
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core-yc.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
+<script type="text/javascript">
+ window.addEvent('domready', function(){
+   HTMLElement.prototype.click = function() {
+   var evt = this.ownerDocument.createEvent('MouseEvents');
+   evt.initMouseEvent('click', true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+   this.dispatchEvent(evt);
+   }
+ /*var transition = 'alternate';
+  $$('input[name=transition]').addEvent('click', function(){ transition = this.value; });
+  var slideAvailable = ['slide-left', 'slide-right', 'slide-top', 'slide-bottom', 'fade'];
+  var slideTransition = function(){
+    switch(transition){
+      case 'alternate':
+        if(! $defined(this.count)) this.count = -1;
+        return slideAvailable[++this.count % slideAvailable.length];
+      case 'random': return slideAvailable.getRandom();
+      default: return transition;
+    }
+  }
+  */
+  
+  var slideshow = new BarackSlideshow('menu', 'pictures', 'loading', { transition: 'fade', auto: true });
  
+  document.getElementById("first").click();
+  
+  
+  
+    // the example above is only fitting for this demo, since we let the user pick the transition and turn auto on/off
+    // for most scenarios, it's only enough with: 
+    // new BarackSlideshow('menu', 'pictures', 'loading', {transition: '<transition here>', auto: true});
+    // transitions can be 'slide-left', 'slide-right', 'slide-top', 'slide-bottom', 'fade'
+    
+});
+
+function mouseOverSmall(){
+  alert("mouseover");
+}
+</script>
+</head>
+<link 	rel="icon"
+		type="image/x-icon"
+		href="http://s3.amazonaws.com/ElizabethandClarke/favicon.ico">
+		
+<body id="demo">    
+    <div id="content">
+     <a href="index.html"><img src="http://s3.amazonaws.com/ElizabethandClarke/ElizabethANDClarkeLogo.jpg"  class="logo"/></a>
+    <div class="top-menu">
+		<ul>
+    		<li class="inset"><a href="contactus.html">contact us</a></li>
+    		<li class="inset"><a href="addtocart.html">subscribe</a></li>
+    		<li class="inset"><a href="http://paypal.com">my order</a></li>
+    	</ul>
+	</div>
+    <div class="menu-slides">
+      <ul class="side-menu">
+			<li class="menu-selected"><a href="index.html">home</a></li>
+          	<li class="inset"><a href="howitworks.html">how it works</a></li>
+          	<li class="inset"><a href="theshirts.html">the shirts</a></li>
+          	<li class="inset"><a href="faq.html">faq</a></li>
+      </ul>
     <div id="slideshow">    
       <span id="loading" style="visibility: hidden; zoom: 1; opacity: 0; "><img src="http://s3.amazonaws.com/ElizabethandClarke/pre-loader.gif" alt="loading" style="width:75px;height:75px" /></span>
    
@@ -21,13 +91,13 @@
 		<li style="visibility: hidden; zoom: 1; opacity: 0; ">
 			<a 		class="subscribe" href="addtocart.html">
 			<span 	id="subscribe-text">SUBSCRIBE</span><span id="now-text">NOW</span></a>
-			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image2.png" alt="Buenos Aires" title="Buenos Aires" style="display: none; width:700px; height:252px "></li>
+			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image2.png" alt="Buenos Aires" title="Buenos Aires" style="display: none; width:926px; height:335px "></li>
 	
 		<li style="visibility: hidden; zoom: 1; opacity: 0; ">
 			<a 		class="subscribe" href="addtocart.html">
 			<span 	id="subscribe-text">SUBSCRIBE</span><span id="now-text">NOW</span></a>
 			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image3.png" alt="Slide 1" title="Sample 1" style="display: none;
-width:700px; height:252px "></li>
+width:926px; height:335px "></li>
         
       </ul>
       
@@ -49,7 +119,7 @@ width:700px; height:252px "></li>
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup" style="height:150px;padding-top:205px;">
     <form action="http://elizabethandclarke.us2.list-manage1.com/subscribe/post?u=00d2e373d2c20053eac03cb28&amp;id=07b3be0421" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-  	<span id="sign-up">sign-up for updates</span>
+  	<span id="sign-up">get news & updates</span>
 
     <div class="mc-field-group">
     	<input type="email" value="" name="EMAIL" placeholder=" email" class="required email" id="mce-EMAIL">
@@ -57,7 +127,7 @@ width:700px; height:252px "></li>
     	<div id="mce-responses" class="clear">
     		<div class="response" id="mce-error-response" style="display:none"></div>
     		<div class="response" id="mce-success-response" style="display:none"></div>
-    	</div>	<div class="clear"><input type="submit" value="" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-button"></div>
+    	</div>	<div class="clear"><input type="submit" value="Update Me!" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-button"></div>
     </form>
     </div>
 

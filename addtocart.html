@@ -18,10 +18,9 @@
 			rel='stylesheet' 
 			type='text/css'>
 			
- 
+  <script src="js/custom-form-elements.js" type="text/javascript"></script>
   <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
    <script src="js/jquery.glow.js" type="text/javascript"></script>
-    <script src="js/custom-form-elements.js" type="text/javascript"></script>
 <script>
 
 
@@ -46,6 +45,7 @@ $(document).ready(function(){
   $("#season-options img").mouseover(function(){
      var id = this.id;
      this.style.cursor='pointer';
+     
      switch(id)
      {
        case "one-season-img":
@@ -63,6 +63,7 @@ $(document).ready(function(){
   $("#season-options img").mouseout(function(){
       var id = this.id;
       this.style.cursor='default';
+      
       switch(id)
       {
         case "one-season-img":
@@ -126,18 +127,17 @@ function switchSeasons(season){
            select_text = "four seasons";
            break;
         case "default":
-           price = "$0.00";
-           img_src = '';
+          break;
+        default:
           break;
 }
-       
+        image.attr("src", img_src);
         document.getElementsByName("hosted_button_id")[0].value = button_value;
         $("#total").html(price);
         $("#subtotal").html(price);
         $('#season-select').val(season);
         $('#selectseasons').text(select_text);
         $('.glow').glow("#dbd5cf", 500); 
-         image.attr("src", img_src);
     }
     
     function clearall(){
@@ -218,9 +218,10 @@ function switchSeasons(season){
             <table>
             <tr><td><input type="hidden" name="on0" value="Sizes">size</td></tr><tr><td><select name="os0" class="styled">
             	<option value="X-Small">x-small (size 0-2)</option>
-            	<option value="Small">small (size 2-4)</option>
-            	<option value="Medium">medium (size 4-6)</option>
-            	<option value="Large">large (size 6-8)</option>
+            	<option value="Small">small (size 4-6)</option>
+            	<option value="Medium">medium (size 8-10)</option>
+            	<option value="Large">large (size 12-14)</option>
+            	<option value="Large">x-large (size 16-18)</option>
             </select> </td></tr>
             </table>
             <input type="hidden" name="currency_code" value="USD">
