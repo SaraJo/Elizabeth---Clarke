@@ -23,14 +23,14 @@ exports.create = function(req, res) {
 }
 
 exports.show = function(req, res) {
-  Level.findById(req.params.companie, function(err, record) {
+  Level.findById(req.params.level, function(err, record) {
     if (err) throw err;
     res.render('levels/show', {level: record})
   })
 }
 
 exports.edit = function(req, res) {
-  Level.findById(req.params.companie, function(err, record) {
+  Level.findById(req.params.level, function(err, record) {
     if (err) throw err;
     res.render('levels/edit', {level: record})
   })
@@ -38,9 +38,9 @@ exports.edit = function(req, res) {
 
 exports.update = function(req, res) {
   console.dir(req.body)
-  Level.update({_id: req.params.companie}, req.body.level, function(err) {
+  Level.update({_id: req.params.level}, req.body.level, function(err) {
     if (err) throw err;
-    Level.findById(req.params.companie, function(err, level) {
+    Level.findById(req.params.level, function(err, level) {
       res.render('levels/show', {level: level})
     })
   })
