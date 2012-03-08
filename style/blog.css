@@ -1,0 +1,923 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET */
+
+
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'Didot';
+	src: url('http://alldayfiles.com/fonts/didotbt-webfont.eot');
+	src: local('â˜º'), url('http://alldayfiles.com/fonts/didotbt-webfont.woff') format('woff'), url('http://alldayfiles.com/fonts/didotbt-webfont.ttf') format('truetype'), url('http://alldayfiles.com/fonts/didotbt-webfont.svg#webfontScQ6IAKD') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ------------ Tags ----------------------- */
+header,
+nav,
+figure,
+article,
+span {
+	display: inline-block;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#permablock nav {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	position: relative;
+}
+
+#permablock blockquote {
+	position: relative;
+}
+
+h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+body {
+	background: white url(http://static.tumblr.com/i2jrupg/llBld2ure/bodyborder.png) repeat-y left top;
+	font-family: 'didot', 'gill sans', georgia, serif;
+	font-size: 12px;
+	line-height: 15.6000000000000001px;
+	font-style: italic;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	padding: 30px 0 0 32px;
+	position: relative;
+	min-height: 100%;
+	margin: 0px;
+}
+
+header {
+	width: 100%;
+	position: relative;
+	left: 0;
+	height: 185px;
+}
+header h1 {
+	font-size: 48px;
+	width: 45%;
+	margin-top: -29px;
+	word-wrap: break-word;
+	white-space: pre-line;
+	line-height: 35px;
+	letter-spacing: -3px;
+	font-weight: normal;
+	padding-top: 10px;
+	float: left;
+}
+header img {
+	width: 40%;
+	max-width: 438px;
+	height: auto;
+	display: none;
+}
+header p {
+	display: block;
+	width: 134px;
+	padding-top: 28px;
+	margin-top: 6px;
+	height: auto;
+}
+nav {
+	font-size: 0.9em;
+	left: 47.75%;
+	margin-left: 15px;
+	position: absolute;
+	top: 41px;
+	display: inline-block;
+	width: 349px;
+}
+nav p {
+	font-size: 1.1em;
+	font-style: italic;
+}
+nav h3 {
+	display: none;
+}
+
+nav ul {
+	margin: 1em 0 3px 0;
+}
+nav li {
+	text-transform: uppercase;
+	font-style: normal;
+}
+nav li em {
+	text-transform: none;
+	font-style: italic;
+}
+article {
+	clear: both;
+	position: relative;
+	width: 100%;
+	margin: 0 0 9px;
+	border-top: 1px solid #3c3c3c;
+}
+article figure {
+	position: relative;
+	width: 45%;
+	padding: 0;
+	margin: 0 0 -8px 0;
+	float: left;
+	overflow: hidden;
+}
+
+.inside .audio figure {
+	display: table;
+}
+
+article figure img {
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	position: relative;
+	display: inline;
+}
+article figure object {
+	width: 100%;
+	/* height: 100%;*/
+	z-index: 1;
+	position: relative;
+	display: inline;
+}
+article div, article aside {
+	float: right;
+	width: 50%;
+	padding: 1em 2.5%;
+	position: relative;
+	background: white;
+	overflow: visible;
+}
+article div {
+	padding-top: 8em;
+	font-size: 1.1em;
+}
+
+#title {
+	padding-top: 20px;
+}
+article aside {
+	font-size: 1.2em;
+	padding-top: 1em;
+	text-transform: uppercase;
+	font-style: normal;
+}
+article blockquote {
+	position: relative;
+	line-height: 38px;
+	left: 0;
+	font-size: 36px;
+	margin-top: 0;
+	word-wrap: break-word;
+	white-space: pre-line;
+}
+
+article h3 {
+	display: none;
+}
+article .bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background: black;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+/* ------------ Classes ----------------------- */
+
+.permalink_nav {
+	font-size: 144px;
+	line-height: 144px;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	left: 420px;
+	height: 144px;
+	display: block;
+	z-index: 1000;
+	font-family: arial, 'trebuchet ms';
+	font-style: normal;
+}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+.permalink_nav a {
+	color: white;
+	text-shadow: 0 0 3px #3c3c3c;
+	display: block;
+	height: 144px;
+	overflow: hidden;
+	opacity: .9;
+	-webkit-transition: .5s;
+}
+.permalink_nav a:hover {
+	color: #333;
+	text-shadow: 0 0 3px #666;
+}
+.permalink_nav #newer {
+	float: left;
+}
+.permalink_nav #older {
+	float: right;
+}
+.meta {
+	margin-bottom: 1em;
+	clear: both;
+}
+
+figure p, figure li {
+	word-wrap: break-word;
+	white-space: pre-line;
+	overflow: visible;
+}
+
+
+
+
+
+.textpost figure p {
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 25px;
+	text-align: justify;
+	overflow: visible;
+	white-space: normal;
+}
+.meta a {
+	background: black;
+	color: white;
+	font-style: italic;
+	padding-left: 3px;
+	padding-right: 3px;
+	overflow: visible;
+}
+.meta li {
+	margin: 0 0 4px;
+}
+
+.replace {
+	text-indent: -9999em;
+	overflow: hidden;
+	height: 0;
+	display: block;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.fixed {
+	position: fixed;
+	left: 33px;
+	width: 350px;
+	padding-right: 26px;
+	background-color: white;
+}
+.caps {
+	text-transform: uppercase;
+	font-style: normal;
+}
+.hide {
+	display: none;
+}
+.b-bottom {
+	border-bottom: 1px solid #3c3c3c;
+}
+.b-top {
+	border-top: 1px solid #3c3c3c;
+}
+.b-left {
+	border-left: 1px solid #3c3c3c;
+}
+.b-right {
+	border-right: 1px solid #3c3c3c;
+}
+.trans {
+	-webkit-transition: .5s;
+}
+.cache_here {
+	display: none;
+}
+.date {
+	position: absolute;
+	float: right;
+	right: 0;
+	z-index: 999;
+	margin-right: 8px;
+	top: 2px;
+}
+.artist-item, .editor-item {
+	display: none;
+}
+
+div.audio_player {
+	padding: 0;
+	width: 100%;
+	display: table;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 20px;
+}
+.audio_player embed {
+	display: table-cell;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+.audio figure span {
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.text {
+/* the only text post on this site is the Artist Bios page! */
+
+border-top: none;
+background: none;
+}
+.text aside {
+	display: none;
+}
+.text figure {
+	width: 48%;
+	margin: -1px 0 0 0;
+	min-height: 260px;
+	border-top: 1px solid #3c3c3c;
+	border-right: 1px solid #3c3c3c;
+	padding: 0;
+	float: left;
+}
+.text figure img {
+	width: 40%;
+	height: auto;
+	clear: both;
+	float: left;
+	margin: 0 12px 12px 0;
+}
+.text figure h2 {
+	font-size: 36px;
+	float: none;
+	line-height: 1em;
+	margin-top: 12px;
+}
+.text figure h3 {
+	display: block;
+	text-transform: uppercase;
+	clear: left;
+	font-size: 1.3em;
+	line-height: 1em;
+	margin-bottom: 12px;
+	font-style: normal;
+	font-weight: bold;
+}
+.text figure p {
+	margin-bottom: 1em;
+	font-size: 13px;
+	max-width: 98%;
+	line-height: 21px;
+}
+.text figure a {
+	text-transform: uppercase;
+	font-style: normal;
+	font-style: italic;
+	background: black;
+	color: white;
+	white-space: nowrap;
+	-webkit-transition: .5s;
+	padding: 0 2px;
+	margin: 0 2px;
+}
+.text figure a:hover {
+	background: #333366;
+}
+.text figure h2 a {
+	background: none;
+	color: black;
+}
+.text figure h2 a:hover {
+	text-decoration: underline;
+	background: none !important;
+}
+.text .left {
+	float: left;
+	clear: left;
+}
+.text .right {
+	border-right: none;
+	padding-left: 1%;
+}
+a:hover {
+	text-decoration: underline;
+}
+/* ------------ IDs ----------------------- */#copyright {
+	text-align: right;
+	padding: 3px 6px;
+	background: black;
+	color: grey;
+	z-index: 1885;
+}
+#copyright a {
+	color: grey;
+}
+#copyright a:hover {
+	color: white;
+}
+
+#caption {
+	padding-top: 20px;
+}
+
+#copyright #ade {
+	font-family: sans-serif;
+	font-style: normal;
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+#copyright #ade:hover {
+	color: white;
+}
+#at_link {
+	width: 134px;
+	display: block;
+}
+#flavorpill_link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75px;
+}
+#pagination {
+	margin-left: 10px;
+	float: left;
+}
+#pagination li {
+	float: left;
+	margin-right: 10px;
+}
+#pagination a {
+	color: white;
+}
+
+.link figure, .quote figure {
+	width: 98%;
+	text-align: center;
+	font-size: 48px;
+	line-height: 60px;
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.chat figure ul {
+	line-height: 40px;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 28px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.quote figure p:last-child {
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	font-style: normal;
+	margin-top: 0;
+	line-height: 40px;
+	white-space: normal;
+	padding: 0;
+}
+
+.quote figure {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+.id3 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+figure .html_photoset {
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+
+embed.photoset {
+	width: 100%;
+}
+
+
+a img {
+	border-style: none;
+}
+
+.link aside, .quote aside {
+	width: 100%;
+	text-align: center;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.video_container, .photoset_container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+}
+
+
+
+
+
+#permablock {
+	position: fixed;
+	left: 33px;
+	width: 350px;
+	padding-right: 26px;
+	z-index: 999;
+	padding-left: 0;
+	padding: 0;
+	margin: 0;
+	display: block;
+	top: 20px;
+	height: 100%;
+	overflow: visible;
+}
+
+#caption img, #permablock img {
+	width: 150px;
+	height: auto;
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.inside #caption img, .inside #permablock img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#permablock h1 {
+	font-size: 32px;
+	width: 100%;
+	float: left;
+	margin-top: 0;
+	word-wrap: break-word;
+	white-space: pre-line;
+	line-height: 23px;
+	letter-spacing: -3px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	margin-top: 10px;
+}
+
+#footer {
+	margin: 0;
+	height: 22px;
+	background-color: black;
+	display: table;
+	width: 100%;
+	padding: 0;
+}
+#footer p {
+	margin: 0;
+	padding: 0 0 0 5px;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	font: normal normal 9px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* ------------ INSIDE PAGES ----------------------- */.inside {
+	top: 0;
+	left: 6px;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+
+.inside header {
+	left: 0;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	border-bottom: thin solid black;
+	margin: 0 0 20px;
+	padding-bottom: 20px;
+}
+
+.inside div p {
+	text-transform: none;
+	font-weight: normal;
+	font-style: italic;
+	margin: 0;
+	font-size: 12px;
+	overflow: visible;
+}
+
+#description {
+	position: relative;
+	clear: both;
+	overflow: visible;
+}
+
+.inside #face_tags {
+	left: 0;
+	float: left;
+	width: 100%;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: thin solid black;
+	clear: both;
+	visibility: visible;
+	background-color: transparent;
+}
+
+.inside #title, .inside #caption {
+	color: black;
+	z-index: 1000;
+	font-size: 24px;
+	font-style: italic;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	display: block;
+	position: relative;
+	left: 0;
+	float: left;
+	width: 100%;
+	background-color: transparent;
+}
+
+.inside article blockquote {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	float: left;
+	line-height: 30px;
+}
+
+.inside .tags {
+	font-style: normal;
+	text-align: right;
+	width: auto;
+	min-height: 5em;
+	font-size: 11px;
+	line-height: 10px;
+	opacity: 1;
+	overflow: visible;
+	margin-top: -2px;
+}
+
+.quote figure blockquote p img {
+	position: relative;
+	margin: 0;
+	height: auto;
+	width: 20px;
+}
+
+.quote figure blockquote {
+	display: none;
+}
+
+.inside .meta {
+	width: 50%;
+	float: left;
+	line-height: 10px;
+	font-size: 11px;
+}
+.inside article {
+	position: fixed;
+	overflow: hidden;
+	margin-bottom: 0;
+	top: 0;
+	left: 410px;
+	right: 0;
+	width: auto;
+	height: 100%;
+	background: black;
+	border-left: 1px solid #3c3c3c;
+	border-right: 8px solid black;
+	border-top: none;
+}
+
+
+.inside article figure {
+	width: 100%;
+	height: 100%;
+	display: table;
+	background-color: black;
+	vertical-align: middle;
+}
+.inside article figure img {
+	display: block;
+	height: 100%;
+	width: auto;
+}
+.inside #copyright {
+	bottom: 0;
+	z-index: 1001;
+	width: 374px;
+	background: black;
+	text-align: left;
+	font-size: 11px;
+	left: 25px;
+	position: fixed;
+}
+.inside #copyright #ade {
+	font-size: 13px;
+}
+
+.inside #pagination {
+	display: none;
+}
+
+.inside .date {
+	padding: 0 0 20px;
+	margin: 0;
+	font-size: 12px;
+	float: left;
+	clear: both;
+	position: relative;
+}
+
+.inside figure .html_photoset {
+	padding: 0;
+	width: 100%;
+	display: block;
+	left: auto;
+}
+
+.inside article figure a {
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+.inside .quote figure p:last-child {
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	font-style: normal;
+	margin-top: 0;
+	line-height: 30px;
+	padding-left: 10px;
+	width: 175px;
+}
+
+.inside .audio figure span {
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.inside .audio_player {
+	background-color: black;
+	padding: 0;
+	width: 100%;
+	display: table;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 150px;
+}
+
+.inside .audio_player embed {
+	display: table-cell;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+.inside figure p, .inside figure ul {
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 20px;
+	text-align: justify;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 20px;
+	width: 100%;
+}
+
+.inside .video_container, .inside .photoset_container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	background-color: black;
+}
+
+.inside .photoset_container div {
+	background-color: black;
+}
+
+
+
+.INSTALL {
+	background: url(http://static.tumblr.com/msonfaf/k07l5ocev/install.png) no-repeat 0% 0%;
+	height: 20px;
+	position: absolute;
+	width: 86px;
+	z-index: 1373;
+	opacity: .5;
+	top: 3px;
+	right: 148px;
+}
+
+.INSTALL a {
+	display: block;
+	height: 20px;
+	width: 86px;
+}
+

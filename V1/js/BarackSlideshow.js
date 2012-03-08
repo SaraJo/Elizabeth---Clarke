@@ -16,7 +16,7 @@ var BarackSlideshow = new Class({
     onShow: $empty,*/
     auto: false,
     autostart: false,
-    autointerval: 5000,
+    autointerval: 2000,
     transition: 'fade',
     tween: { duration: 700 }
   },

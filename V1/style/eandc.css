@@ -8,8 +8,8 @@ background:#dbd5cf;
 
 @font-face 
 {
-font-family: "Didot HTF";
-src: url(fonts/Didot HTF);
+font-family: "DidotLTStd";
+src: url(fonts/DidotLTStd-Roman.otf);
 }
 
 @font-face 
@@ -25,7 +25,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 
 #content{
-	width: 1000px; 
+	width: 1310px; 
 	margin:0 auto;
 }
 #season-options
@@ -73,6 +73,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 	width:80%;
 }
 
+.menu-slides
+{
+	width:100%;
+	height:400px;
+	display:inline-block;
+}
 
 #slideshow, #images 
 {
@@ -80,8 +86,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	position: relative;
 	display: inline-block;
 	padding: 0 30px 55px 98px;
-	width: 700px;
-	height: 252px;
+	width: 926px;
+	height: 335px;
 	margin-left: -5px;
 	margin-top: 41px;
 	-moz-border-radius: 15px;
@@ -93,8 +99,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 	float: right;
 	position: relative;
 	display: inline-block;
-	width: 700px;
-	height: 252px;
+	width: 926px;
+	height: 335px;
 	margin-left: -5px;
 	margin-top: 41px;
 	-moz-border-radius: 15px;
@@ -110,10 +116,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 	position: relative;
 	margin: -5px 0 50px 500px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 88px;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
+	font-family: 'DidotLTStd';
 	font-size: 24pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
@@ -143,10 +149,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 	position: relative;
 	margin: -5px 0 50px 500px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 88px;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
+	font-family: 'DidotLTStd';
 	font-size: 24pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
@@ -164,134 +170,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
 	
-}
-
-.subscribe-theshirts:visited 
-{
-	width: 400px;
-	height: 80px;
-	display: inline-block;
-	position: relative;
-	margin: -5px 0 50px 500px;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 24pt;
-	font-weight: thin;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	box-shadow: 3px 3px 15px #777;
-	-moz-box-shadow: 3px 3px 15px #777;
-	-webkit-box-shadow: 3px 3px 15px #777;
-	
-	background: #541007; /* Old browsers */
-	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
-	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
-	
-}
-
-.subscribe-addtocart
-{
-	width: 400px;
-	height: 80px;
-	display: inline-block;
-	position: relative;
-	margin: 30px 0 100px 260px;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 24pt;
-	font-weight: thin;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	box-shadow: 3px 3px 15px #777;
-	-moz-box-shadow: 3px 3px 15px #777;
-	-webkit-box-shadow: 3px 3px 15px #777;
-	
-	background: #541007; /* Old browsers */
-	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
-	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
-}
-
-.subscribe-addtocart:hover 
-{
-	width: 400px;
-	height: 80px;
-	display: inline-block;
-	position: relative;
-	margin: -5px 0 50px 500px;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 24pt;
-	font-weight: thin;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	box-shadow: inset 2px 2px 10px #000000;
-	
-	background: #541007; /* Old browsers */
-	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
-	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
-	
-}
-
-.subscribe-addtocart:visited
-{
-	width: 400px;
-	height: 80px;
-	display: inline-block;
-	position: relative;
-	margin: 30px 0 100px 260px;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 24pt;
-	font-weight: thin;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	box-shadow: 3px 3px 15px #777;
-	-moz-box-shadow: 3px 3px 15px #777;
-	-webkit-box-shadow: 3px 3px 15px #777;
-	
-	background: #541007; /* Old browsers */
-	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
-	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
 }
 
 .subscribe-howitworks
@@ -302,10 +180,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 	position: relative;
 	margin: 30px 0 15px 260px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 88px;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
+	font-family: 'DidotLTStd';
 	font-size: 24pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
@@ -316,37 +194,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-box-shadow: 3px 3px 15px #777;
 	-webkit-box-shadow: 3px 3px 15px #777;
 	
-	background: #541007; /* Old browsers */
-	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
-	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
-}
-
-.subscribe-howitworks:visited
-{
-	width: 400px;
-	height: 80px;
-	display: inline-block;
-	position: relative;
-	margin: 30px 0 15px 260px;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 24pt;
-	font-weight: thin;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	border-radius: 8px;
-	-moz-border-radius: 8px;
-	box-shadow: 3px 3px 15px #777;
-	-moz-box-shadow: 3px 3px 15px #777;
-	-webkit-box-shadow: 3px 3px 15px #777;
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -365,10 +212,10 @@ src: url(fonts/Numbers/Numbers Delancey);
 	position: relative;
 	margin: 30px 0 15px 260px;
 	text-align: center;
-	line-height: 80px;
+	line-height: 88px;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
+	font-family: 'DidotLTStd';
 	font-size: 24pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
@@ -376,6 +223,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	box-shadow: inset 2px 2px 10px #000000;
+	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -389,8 +237,8 @@ src: url(fonts/Numbers/Numbers Delancey);
 
 #slideshow #pictures 
 {
-	width: 700px;
-	height: 252px;
+	width: 926px;
+    height: 335px;
     left: 0;
     overflow: hidden;
     z-index: 1;
@@ -407,13 +255,13 @@ src: url(fonts/Numbers/Numbers Delancey);
 	display: inline-block;
     position: absolute;
     top: 0;
-    width: 700px;
+    width: 926px;
 }
 #slideshow #pictures li img 
 {
     display: inline-block;
     position: relative;
-	width:700px;
+	width:926px;
     bottom: 0;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
@@ -457,13 +305,13 @@ src: url(fonts/Numbers/Numbers Delancey);
 }
 #slideshow #pictures .subscribe 
 {
-  	height:66px;
-    width:212px;
     position:absolute;
-	margin-left:440px;
-	margin-top:160px;
+	margin-left:600px;
+	margin-top:210px;
     float:right;
     z-index: 10;
+	width: 252px;
+	height: 91px;
 	display: inline-block;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -471,6 +319,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-box-shadow: 3px 3px 12px #444;
 	-webkit-box-shadow: 3px 3px 12px #444;
 	text-decoration: none;
+	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -481,18 +330,13 @@ src: url(fonts/Numbers/Numbers Delancey);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
 }
 
-#slideshow #pictures .subscribe:visited 
-{
-  color:white;
-}
-
 #slideshow #pictures .subscribe:hover 
 {
-    height:66px;
-    width:212px;
+    height:91px;
+    width:252px;
     position:absolute;
-	margin-left:440px;
-	margin-top:160px;
+	margin-left:600px;
+	margin-top:210px;
     float:right;
 	cursor:pointer;
 	display: inline-block;
@@ -500,6 +344,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-border-radius: 8px;
 	box-shadow: inset 2px 2px 10px #000000;
 	text-decoration: none;
+	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -514,12 +359,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 17pt;
+	font-family: 'DidotLTStd';
+	font-size: 24pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 10px 0 0 21px;
+	margin: 22px 0 0 25px;
 	position: absolute;
 }
 
@@ -527,22 +372,22 @@ src: url(fonts/Numbers/Numbers Delancey);
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 17pt;
+	font-family: 'DidotLTStd';
+	font-size: 24pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 34px 0 0 23px;
+	margin: 54px 0 0 27px;
 	position: absolute;
 }
 
 
 #slideshow #pictures .subscribe-small 
 {
-	height:42px;
-    width:200px;
+    height:51px;
+    width:222px;
     position:absolute;
-	margin-right:25px;
+	margin-right:33px;
     margin-bottom:22px;
     float:right;
 	right:0;
@@ -555,6 +400,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-moz-box-shadow: 2px 1px 10px #222;
 	-webkit-box-shadow: 2px 1px 10px #222;
 	text-decoration: none;
+	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -565,25 +411,22 @@ src: url(fonts/Numbers/Numbers Delancey);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
 }
 
-#slideshow #pictures .subscribe-small 
-{
-   color:white;
-}
-
 #slideshow #pictures .subscribe-small:hover 
 {
-	height:42px;
-    width:200px;
+	height:51px;
+    width:222px;
     position:absolute;
-	margin-right:25px;
+	margin-right:33px;
 	margin-bottom:22px;
     float:right;
     cursor:pointer;
+
 	display: inline-block;
 	border-radius: 7px;
 	-moz-border-radius: 7px;
 	box-shadow: inset 2px 2px 10px #000000;
 	border:none;
+	
 	background: #541007; /* Old browsers */
 	background: -moz-linear-gradient(top, #541007 0%, #700f08 0%, #2d0304 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#541007), color-stop(0%,#700f08), color-stop(100%,#2d0304)); /* Chrome,Safari4+ */
@@ -592,18 +435,19 @@ src: url(fonts/Numbers/Numbers Delancey);
 	background: -ms-linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* IE10+ */
 	background: linear-gradient(top, #541007 0%,#700f08 0%,#2d0304 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#541007', endColorstr='#2d0304',GradientType=0 ); /* IE6-9 */
+	
 }
 
 #subscribe-text-small{
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 11pt;
+	font-family: 'DidotLTStd';
+	font-size: 15pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 3px 0 0 16px;
+	margin: 8px 0 0 20px;
 	position: absolute;
 }
 
@@ -611,12 +455,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
-	font-size: 11pt;
+	font-family: 'DidotLTStd';
+	font-size: 15pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	margin: 20px 0 0 17px;
+	margin: 29px 0 0 21px;
 	position: absolute;
 }
 
@@ -624,17 +468,19 @@ src: url(fonts/Numbers/Numbers Delancey);
 {
 	position:absolute;
 	z-index: 1;
-	padding-left:210px;
-	padding-top:100px;
+	padding-left:335px;
+	padding-top:120px;
 }
 
 .side-menu
 {
-	width:13%;
+	width:12%;
+	float:left;
+	padding-left:35px;
+	padding-top: 35px;
 }
 .side-menu li
 {
-	float:right;
 	list-style-type:none;
 	padding-bottom:40px;
 }
@@ -642,10 +488,9 @@ src: url(fonts/Numbers/Numbers Delancey);
 .top-menu
 {
 	width: 450px;
-	height: 70px;
 	float: right;
 	margin-right: 127px;
-	margin-top: -87px;
+	margin-top: 43px;
 }
 .top-menu ul
 {
@@ -685,17 +530,18 @@ src: url(fonts/Numbers/Numbers Delancey);
 	-webkit-font-smoothing: antialiased;
 	list-style-type: none;
 	text-shadow: #fff 0px 1px 1px, #817d7a 0 -1px 1px;
-	float:left;
+}
+
+.inset ul{
 	line-height: 3em;
 	font-size: 3em;
 	color: #b1aca7;
 }
 
-
 .inset a:link {
 	text-decoration: none;
 	border: none 0;
-	font-size:16pt;
+	font-size:20pt;
 	color: #b1aca7;
 }
 
@@ -717,7 +563,6 @@ src: url(fonts/Numbers/Numbers Delancey);
 	color: #94908b;
 }
 
-
 .menu-selected{
 	font-family: 'Copse', serif;
 	-webkit-font-smoothing: antialiased;
@@ -734,74 +579,23 @@ src: url(fonts/Numbers/Numbers Delancey);
 .menu-selected a:link {
 	text-decoration: none;
 	border: none 0;
-	font-size:16pt;
+	font-size:20pt;
 	color: #7a7672;
 }
 
 .menu-selected a:visited {
 	text-decoration: none;
 	border: none 0;
-	font-size:16pt;
+	font-size:20pt;
 	color: #7a7672;
 }
 
 .logo
 {
- 	margin-left: -43px;
+	height:90px; 
+	padding-left:22px;
 	float:left;
-	display: inline-block;
-	height: 138px;
-	width: 550px;
-}
-
-.quotes-line1
-{
-	font-family: 'Helvetica';
-	-webkit-font-smoothing: antialiased;
-	list-style-type: none;
-	font-size: 9pt;
-	color: #232323;
-	margin-left: -458px;
-	margin-top: 75px;
-	text-align: left;
-	display: inline-block;
-	width: 230px;
-	height: 30px;
-	text-transform: uppercase;
-	position: relative;
-}
-
-.quotes-line2
-{
-	font-family: 'Helvetica';
-	-webkit-font-smoothing: antialiased;
-	list-style-type: none;
-	font-size: 9pt;
-	color: #232323;
-	display: inline-block;
-	margin-left: 49px;
-	margin-top: 90px;
-	text-align: left;
-	width: 230px;
-	height: 30px;
-	text-transform: uppercase;
-	position: absolute;
-}
-
-.shopping-bag
-{
-	height: 139px;
-	width: 110px;
-	margin-top: -45px;
-	margin-right: -15px;
-}
-
-.envelope
-{
-	height: 78px;
-	width: 100px;
-	margin-top: -20px;
-	margin-right: 5px;
+	display: inline;
 }
 
 .phone
@@ -917,7 +711,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-family: Museo300;
 	font-size:20pt;
 	color: #666460;
-	width:700px;
+	width:926px;
 	float:right;
 	display: inline;
 	margin-right: 129px;
@@ -941,7 +735,7 @@ src: url(fonts/Numbers/Numbers Delancey);
 	font-family: Museo300;
 	font-size:14pt;
 	color: #666460;
-	width:700px;
+	width:926px;
 	float:right;
 	display: inline;
 	margin-right: 129px;
@@ -951,12 +745,12 @@ src: url(fonts/Numbers/Numbers Delancey);
 .copy
 {
 	font-family: Museo300;
-	font-size:13pt;
+	font-size:14pt;
 	color: #666460;
-	width:680px;
+	width:910px;
 	float:right;
 	display: inline;
-	margin: 0px 135px 10px 0;
+	margin: 20px 135px 10px 0;
 }
 
 .home
@@ -1046,29 +840,29 @@ src: url(fonts/Numbers/Numbers Delancey);
 #sign-up
 {
 	font-family: Museo300;
-	font-size: 20pt;
-	float: left;
+	font-size:24pt;
+	float:left;
 	margin-top: -38px;
-	padding-left: 182px;
-	color: #736F6C;
+	padding-left:262px;
+	color: #736f6c;
 	-webkit-font-smoothing: antialiased;
 }
 
 #mce-EMAIL
 {
 	font-family: Museo300;
-	font-size: 20pt;
-	color: #666460;
-	float: left;
-	margin-left: 435px;
-	margin-top: -51px;
+	font-size:24pt;
+	color:#666460;
+	float:left;
+	margin-left:565px;
+	margin-top: -52px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	width: 340px;
-	height: 35px;
-	box-shadow: inset 3px 3px 8px #9b9696;
-	-moz-box-shadow: inset 3px 3px 8px #9b9696;
-	-webkit-box-shadow: inset 3px 3px 8px #9b9696;
+	width:390px;
+	height:49px;
+	box-shadow:inset 3px 3px 8px #9b9696; 
+	-moz-box-shadow:inset 3px 3px 8px #9b9696; 
+	-webkit-box-shadow:inset 3px 3px 8px #9b9696;
 	border: none;
 }
 
@@ -1079,17 +873,19 @@ button
 }
 
 .subscribe-button{
-	background: url('http://s3.amazonaws.com/ElizabethandClarke/Button-Home-Signup.png');
-	height: 41px;
-	width: 111px;
+	height: 51px;
+	width: 195px;
 	border: 0px;
 	border-radius: 7px;
-	color: #333333;
+	background: #ada59f;
 	float: right;
-	margin: 0px 0px 57px 0px;
+	margin: -54px 143px 57px 0px;
 	box-shadow: 5px 5px 8px #9b9696;
 	-moz-box-shadow: 5px 5px 8px #9b9696;
 	-webkit-box-shadow: 5px 5px 8px #9b9696;
+	font-size: 20pt;
+	font-family: Museo300;
+	color: #343231;
 }
 
 .paypal-button{
@@ -1142,7 +938,7 @@ button
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
+	font-family: 'DidotLTStd';
 	font-size: 23pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
@@ -1155,7 +951,7 @@ button
 	text-align: center;
 	color: white;
 	text-decoration: none;
-	font-family: 'Didot HTF';
+	font-family: 'DidotLTStd';
 	font-size: 21pt;
 	font-weight: thin;
 	-webkit-font-smoothing: antialiased;
@@ -1339,7 +1135,7 @@ width:100px;
 }
 .table ul li.col4
 {
-width:50px;
+width:75px;
 text-align: right;
 }
 .table ul li.col5
