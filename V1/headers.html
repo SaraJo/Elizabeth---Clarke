@@ -1,0 +1,45 @@
+ <html>​
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Elizabeth &amp; Clarke</title>​
+  <link rel="stylesheet" href="style/eandc.css" type="text/css" media="screen" title="Stylesheet" />​
+  <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core-yc.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
+<script type="text/javascript">
+ window.addEvent('domready', function(){
+   HTMLElement.prototype.click = function() {
+   var evt = this.ownerDocument.createEvent('MouseEvents');
+   evt.initMouseEvent('click', true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+   this.dispatchEvent(evt);
+}
+  var slideshow = new BarackSlideshow('menu', 'pictures', 'loading', { transition: 'fade', auto: true });
+  document.getElementById("first").click();  
+});
+</script>
+</head>
+<link 	rel="icon"
+		type="image/x-icon"
+		href="http://s3.amazonaws.com/ElizabethandClarke/favicon.ico">
+<body id="demo">    
+  <div id="content">
+  <a href="index.html"><img src="http://s3.amazonaws.com/ElizabethandClarke/garment-tag-logo.png"  class="logo"/></a>
+	<div class="quotes-line1">I bought Vogue instead of dinner.</div>
+	<div class="quotes-line2">I felt it just fed me more.</div>
+	<div >
+		<ul>
+    		<li class="inset"><a href="http://paypal.com"><img src="http://s3.amazonaws.com/ElizabethandClarke/shopping-bag.png" class="shopping-bag"></a></li>
+			<li class="inset"><a href="contactus.html"><img src="http://s3.amazonaws.com/ElizabethandClarke/envelope-image.png" class="envelope"></a></a></li>
+    	</ul>
+	</div>
+      <hr>
+      <ul class="top-menu">
+			<li class="menu-selected inset"><a href="index.html">home</a></li>
+          	<li class="inset"><a href="howitworks.html">how it works</a></li>
+          	<li class="inset"><a href="theshirts.html">the shirts</a></li>
+          	<li class="inset"><a href="faq.html">faq</a></li>
+      </ul>
+</body>
+</html>

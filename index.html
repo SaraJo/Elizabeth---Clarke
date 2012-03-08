@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><!-- <!DOCTYPE HTML> -->
+  <html>​
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Elizabeth &amp; Clarke</title>​
+  <link rel="stylesheet" href="style/eandc.css" type="text/css" media="screen" title="Stylesheet" />​
+  <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+  
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core-yc.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/mootools-1.2.2.2-more.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/Fx.MorphList.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/BarackSlideshow.js"></script>
+<script>
+var today = new Date();
+if((today.getDate() == 18) && (today.getMonth() == 0) && (today.getFullYear() == 2012))
+ {
+      window.location = "http://protestsopa.org";
+ }
+</script>
+<script type="text/javascript">
+ window.addEvent('domready', function(){
+   HTMLElement.prototype.click = function() {
+   var evt = this.ownerDocument.createEvent('MouseEvents');
+   evt.initMouseEvent('click', true, true, this.ownerDocument.defaultView, 1, 0, 0, 0, 0, false, false, false, false, 0, null);
+   this.dispatchEvent(evt);
+   }
+ /*var transition = 'alternate';
+  $$('input[name=transition]').addEvent('click', function(){ transition = this.value; });
+  var slideAvailable = ['slide-left', 'slide-right', 'slide-top', 'slide-bottom', 'fade'];
+  var slideTransition = function(){
+    switch(transition){
+      case 'alternate':
+        if(! $defined(this.count)) this.count = -1;
+        return slideAvailable[++this.count % slideAvailable.length];
+      case 'random': return slideAvailable.getRandom();
+      default: return transition;
+    }
+  }
+  */
+  
+  var slideshow = new BarackSlideshow('menu', 'pictures', 'loading', { transition: 'fade', auto: true });
+ 
+  document.getElementById("first").click();
+  
+  
+  
+    // the example above is only fitting for this demo, since we let the user pick the transition and turn auto on/off
+    // for most scenarios, it's only enough with: 
+    // new BarackSlideshow('menu', 'pictures', 'loading', {transition: '<transition here>', auto: true});
+    // transitions can be 'slide-left', 'slide-right', 'slide-top', 'slide-bottom', 'fade'
+    
+});
+
+function mouseOverSmall(){
+  alert("mouseover");
+}
+</script>
+</head>
+<link 	rel="icon"
+		type="image/x-icon"
+		href="http://s3.amazonaws.com/ElizabethandClarke/favicon.ico">
+		
+<body id="demo">    
+    <div id="content">
+     <a href="index.html"><img src="http://s3.amazonaws.com/ElizabethandClarke/ElizabethANDClarkeLogo.jpg"  class="logo"/></a>
+    <div class="top-menu">
+		<ul>
+    		<li class="inset"><a href="contactus.html">contact us</a></li>
+    		<li class="inset"><a href="addtocart.html">subscribe</a></li>
+    		<li class="inset"><a href="http://paypal.com">my order</a></li>
+    	</ul>
+	</div>
+    <div class="menu-slides">
+      <ul class="side-menu">
+			<li class="menu-selected"><a href="index.html">home</a></li>
+          	<li class="inset"><a href="howitworks.html">how it works</a></li>
+          	<li class="inset"><a href="theshirts.html">the shirts</a></li>
+          	<li class="inset"><a href="faq.html">faq</a></li>
+      </ul>
+    <div id="slideshow">    
+      <span id="loading" style="visibility: hidden; zoom: 1; opacity: 0; "><img src="http://s3.amazonaws.com/ElizabethandClarke/pre-loader.gif" alt="loading" style="width:75px;height:75px" /></span>
+   
+      <ul id="pictures"> 
+		
+		<li style="visibility: hidden; zoom: 1; opacity: 0; ">
+			<a 		class="subscribe-small" href="addtocart.html"
+					id="small_button" onmouseover="mouseoverSmall();">
+			<span 	id="subscribe-text-small">SUBSCRIBE</span><span id="now-text-small">NOW</span></a>
+			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image0.png"
+					alt="Our design team creates the perfect collections of white shirts each season" title="Creation" style="display: none; "></li> 
+		
+		<li style="visibility: hidden; zoom: 1; opacity: 0; ">
+			<a 		class="subscribe" href="addtocart.html">
+			<span 	id="subscribe-text">SUBSCRIBE</span><span id="now-text">NOW</span></a>
+			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image1.png" alt="Our design team creates the perfect collections of white shirts each season" title="Creation" style="display: none; ">
+			<a 		class="subscribe" id="large_button"><span id="subscribe-text">SUBSCRIBE</span><span id="now-text">NOW</span></a></li> 
+
+		<li style="visibility: hidden; zoom: 1; opacity: 0; ">
+			<a 		class="subscribe" href="addtocart.html">
+			<span 	id="subscribe-text">SUBSCRIBE</span><span id="now-text">NOW</span></a>
+			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image2.png" alt="Buenos Aires" title="Buenos Aires" style="display: none; width:926px; height:335px "></li>
+	
+		<li style="visibility: hidden; zoom: 1; opacity: 0; ">
+			<a 		class="subscribe" href="addtocart.html">
+			<span 	id="subscribe-text">SUBSCRIBE</span><span id="now-text">NOW</span></a>
+			<img 	src="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image3.png" alt="Slide 1" title="Sample 1" style="display: none;
+width:926px; height:335px "></li>
+        
+      </ul>
+      
+      <ul id="menu">
+        
+        <li><a href="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image0.png" id="first">home</a></li>
+        <li><a href="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image1.png">one</a></li>
+        <li><a href="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image2.png">two</a></li>
+        <li><a href="http://s3.amazonaws.com/ElizabethandClarke/Slideshow-Image3.png">three</a></li>
+        
+        
+      <li class="background" style="visibility: hidden; zoom: 1; opacity: 0; left: 0px; top: 188px; width: 166px; height: 28px; "><div class="inner"></div></li></ul>
+    </div> 
+    </div>
+    <div class="copy home">
+      <p>The Perfect White Shirt for under $30? Sound impossible? It's not. Welcome to Elizabeth &amp; Clarke. </p>
+      <p>We develop, design, and manufacture essentials that you need each season: and we are starting with the white shirt. Guaranteed to NEVER be: too see-through, too short, too long, too easily wrinkled, or too easily stained.</p>
+    </div>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup" style="height:150px;padding-top:205px;">
+    <form action="http://elizabethandclarke.us2.list-manage1.com/subscribe/post?u=00d2e373d2c20053eac03cb28&amp;id=07b3be0421" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+  	<span id="sign-up">get news & updates</span>
+
+    <div class="mc-field-group">
+    	<input type="email" value="" name="EMAIL" placeholder=" email" class="required email" id="mce-EMAIL">
+    </div>
+    	<div id="mce-responses" class="clear">
+    		<div class="response" id="mce-error-response" style="display:none"></div>
+    		<div class="response" id="mce-success-response" style="display:none"></div>
+    	</div>	<div class="clear"><input type="submit" value="Update Me!" name="subscribe" id="mc-embedded-subscribe" class="button subscribe-button"></div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+    <ul class="bottom-menu">
+      <li class="inset"><a href="http://www.facebook.com/pages/Elizabeth-Clarke/271444709548359">facebook</a></li>
+      <li class="inset"><a href="http://www.twitter.com/perfect_basics">twitter</a></li>
+      <li class="inset"><a href="contactus.html">contact us</a></li>
+    </ul>
+</body>
+ <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-25112636-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</html>
