@@ -1,0 +1,21 @@
+h1 Orders
+
+a(href="/orders/new") New
+
+table
+  thead
+    th Quantity
+    th Gift?
+    th Shipping Address
+    th Shipping Zip
+    th Actions
+  tbody
+    for order in orders
+      tr
+        td= order.quantity
+        td= order.gift
+        td= order.shipping_address
+        td= order.shipping_zip
+        td
+          a(href="/orders/#{order.id}") Show
+          a(href="/orders/#{order.id}/edit") Edit

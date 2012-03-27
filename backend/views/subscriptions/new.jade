@@ -1,0 +1,191 @@
+!=partial('../header')
+ #wrappercheckout
+   #checkout
+    h1 Checkout
+
+    #tab-container.tab-container
+     ul(class='etabs')
+      li(class='tab')
+       a(href='#tabs-billing') Billing Address &raquo;
+      li(class='tab')
+       a(href='#tabs-shipping') Shipping Address &raquo;
+      li(class='tab')
+       a(href='#tabs-payment') Payment Information
+     #tabs-billing.panel-container
+      h2 Step 1
+      h1 Billing Address
+      form(method='get', action='#tabs-shipping')
+       table(border='0')
+        tr(class='odd')
+         td(class='label') First Name
+         td
+          input(type='text', id='FirstName', name='user[first]', class='required')=user.id
+        tr(class='even')
+         td(class='label') Last Name
+         td
+          input(type='text', id='LastName', name='user[last]', class='required')=user.last
+        tr(class='odd')
+          td(class='label') Address
+          td
+           input(type='text', id='Address', name='user[address]', class='required')=user.address,
+         tr(class='even', )
+          td(class='label') Apartment or Suite
+          td
+           input(type='text', id='Apartment',  name='user[apartment]', class='required')=user.apartment
+         tr(class='odd')
+            td(class='label') Zipcode
+            td
+             input(type='text', id='Zipcode', name='user[zip]', class='required')=user.zip
+           tr(class='even')
+            td(class='label') City
+            td
+             input(type='text', id='City', name='user[city]', class='required')=user.city
+           tr(class='odd')
+             td(class='label') State
+             td
+              input(type='text', class='required', name='user[state]', id='State')=user.state
+               
+         tr(class='even')
+          td(class='label') Email Address
+          td
+           input(type='text', id='email')
+       input(type='submit', value='Next', class='next', id='next1')
+     #tabs-shipping.panel-container
+      h2 Step 2
+      h1 Shipping Address 
+      form(method='get', action='#tabs-payment')
+       a(href='#', class='copyAddress') Use my Billing Address
+       table(border='0')
+        tr(class='odd')
+         td(class='label') First Name
+         td
+          input(type='text', id='billing_first', name='user[billing_first]', class='required')=user.billing_first
+        tr(class='even')
+         td(class='label') Last Name
+         td
+           input(type='text', id='billing_last', name='user[billing_last]', class='required')=user.billing_last
+        tr(class='odd')
+         td(class='label') Address
+         td
+          input(type='text', id='billing_address', name='user[billing_address]', class='required')=user.billing_address
+         tr(class='even')
+          td(class='label') Apartment or Suite
+          td
+           input(type='text', id='billing_apartment', name='user[billing_apartment]', class='required')=user.billing_apartment
+         tr(class='odd')
+            td(class='label') Zipcode
+            td
+             input(type='text', id='billing_zip', name='user[billing_zip]', class='required')=user.billing_zip
+           tr(class='even')
+            td(class='label') City
+            td
+             input(type='text', id='billing_city', name='user[billing_city]', class='required')=user.billing_city
+           tr(class='odd')
+             td(class='label') State
+             td
+              input(type='text')
+               
+      input(type='submit', value='next', class='next', id='next2')
+     
+     #tabs-payment.panel-container
+      form(method='post', action='/orders')
+       h2 Step 3
+       h1 Payment Information
+       
+        #credit
+         img(src='/stylesheets/images/visa.gif', width='50', height='30', alt='Visa')
+         img(src='/stylesheets/images/mastercard.gif', width='50', height='30', alt='Mastercard')
+       
+        table
+         tr(class='odd')
+           td(class='label') Cardholder's Name
+           td
+             input(type='text', class='required', name="cc_name")
+         tr(class='even')
+           td(class='label') Credit Card Number
+           td
+            input(type='text', class='required', name='cc_number')
+          tr(class='odd')
+           td(class='label') Expiration Date
+           td
+            input(type='text', name='exp', class="required")
+          tr
+           td(class='label') Security Code
+           td
+            input(type='text', name='security', class='required')
+          tr(class='odd')
+           td(class='label', style='padding-top: 10px') Organizations
+            p.moreinfo Click here if you are affiliated with one of these organizations and we will share a percentage of our earnings
+           td(style='text-align: left')
+             p
+              input(type='checkbox', value='goldenseeds') 
+              span Golden Seeds
+             p(style='margin-top: -20px')
+              input(type='checkbox', value='women2') 
+              span Women 2.0
+       input(type='submit', value='Place Order', class='next')
+   #overview
+    h1 Cart
+    img(src=photo.secondary_photo, class='productimg')
+    table(width='300', border='0')
+     tr
+      td(id='productname', class='left')=product.name
+      td(id='productcost', class='right')
+        span $
+        span=product.price
+     tr
+      td(id='productquantity', class='left') Quantity
+      td(id='quantitynumber', class='right') Number
+     tr
+      td(id='shippinglabel', class='left') Shipping and Handling
+      td(id='shippingcost', class='right') $5.99
+     tr
+      td(id='totallabel', class='left total') Order Total
+      td(id='totalcost', class='right total') 
+        span $
+        span(name=order.total)=order.total
+    hr
+    table(width='300', border='0')
+     tr
+      td(class='left') Estimated Arrival
+      td(id='datearrival', class='right') January 27th, 2012
+    p.moreinfo Please allow 2 weeks handling time and be advised that only standard shipping is available.
+         
+// HTML Markup for modals     
+div(style='display:none;')
+ div(id='checkout-thanks', class='modal')
+  #titlebar
+   span Order Confirmed
+   a(href='#', onClick='$.colorbox.close(); return false;')
+    img(src='stylesheets/images/closemodal.png', class='close')
+  #content
+   h1 Thanks for your order!
+   p Your receipt is on its way.
+     
+
+!=partial('../modals')
+
+
+div(id='cboxOverlay', style='display: none; opacity: .8;')
+// End HTML Markup for Modals
+
+script(type="text/javascript", src="/javascripts/mylibs/jquery.colorbox-min.js")
+script
+ $(document).ready(function() {
+  $('.modallink').colorbox({
+   inline: true,
+    transition: 'fade',
+    speed: 300,
+    opacity: .8,
+   });
+  });
+script(type="text/javascript", src="/javascripts/mylibs/jquery.easytabs.min.js")
+script
+ $('#tab-container').easytabs({ updateHash:false });
+ $('#next1').click( function() {
+ $('#tab-container').easytabs('select', '#tabs-shipping');
+  });
+ $('#next2').click( function() {
+ $('#tab-container').easytabs('select', '#tabs-payment');
+ });
+ $("#thankslink").colorbox({href:"thanks.html", width: 500});

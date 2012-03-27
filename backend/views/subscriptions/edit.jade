@@ -1,0 +1,24 @@
+h1 Edit #{order.name}
+
+form(method='post', action='/orders/#{order.id}')
+  
+  input(type='hidden', name='_method', value='put')
+  
+  .formRow
+    label Quantity:
+    input(type='text', name='order[quantity]', class="required number",  value=order.quantity)
+  
+  .formRow
+    label Gift? 
+    textarea(name='order[gift]' class='required')= order.gift
+    
+  .formRow
+    label Shipping Address:
+    textarea(name='order[shipping_address]', class="required")= order.shipping_address
+      
+  .formRow
+    label Shipping Zip:
+    textarea(name='order[shipping_zip]', class="required zip")= order.shipping_zip
+  
+  .formRow
+    input(type='submit', value='Save')

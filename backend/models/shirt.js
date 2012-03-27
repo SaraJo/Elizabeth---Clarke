@@ -10,7 +10,7 @@ var ShirtSchema = new Schema({
   color : {type : String},
   price : {type : String},
   sizes : [],
-  images : [Images],
+  images : [ImageSchema],
   season : {type: String},
   description : {type : String},
   cost : {type : Number},
