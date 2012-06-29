@@ -1,0 +1,10 @@
+{
+	"name" : "Melanie's Jade App",
+	"version" : "0.0.1.0",
+	"private" : true,
+	"dependencies" : {
+		"jade" : "~0.19.0"
+	},
+	"subdomain" : "melanie",
+	"scripts" : {"server.js"}
+}

@@ -1,0 +1,487 @@
+body
+  // Wrap 
+  #wrap  
+    // Account 
+    section#account
+      // Shell 
+      .shell
+        // Account NAv 
+        nav#account-nav
+          ul
+            li.curr-tab
+              a(href='#')
+                img(src='img/prof.png', alt='')
+                | my profile
+            li
+              a(href='#')
+                img(src='img/subs.png', alt='')
+                | my subscription
+            li
+              a(href='#')
+                img(src='img/shirt-tab.png', alt='')
+                | my shirts
+            li.request-tab
+              a(href='#')
+                img(src='img/request.png', alt='')
+                | request a return
+        // END Account NAv 
+        section.acc-entries
+          //
+             Acc Entry 
+          section.acc-entry
+            .my-profile
+              a.edit-btn(href='#') edit account
+              ul
+                li
+                  img(src='img/acc-det.png', alt='')
+                li email: melanie@elizabethandclarke.com
+                li password: ******
+              ul
+                li
+                  img(src='img/ship-add.png', alt='')
+                li melanie moore
+                li 40 broad st
+                li apt. 27h
+                li new york, ny 10004
+                li united states
+              ul
+                li
+                  img(src='img/pay-d.png', alt='')
+                li credit card no: **** *** *** 03009
+                li expiration date: january 2015
+                li cvv: 6103 zip         code: 10004
+              ul
+                li
+                  img(src='img/sizing-info.png', alt='')
+                li dress size: 2
+                li cup size: C/D
+                li
+                  a.size-pop(href='#') size guide
+              .cl  
+            .edit-info
+              form(action='#', method='post')
+                ul
+                  li
+                    img(src='img/acc-det.png', alt='')
+                  li
+                    input.field(type='text', title='melanie@elizabethandclarke.com', value='melanie@elizabethandclarke.com')
+                  li
+                    input.field.c-pass(type='password', value='******', title='******')
+                  li.small must be at least 6 characters
+                ul
+                  li
+                    img(src='img/ship-add.png', alt='')
+                  li
+                    input.field(type='text', value='melanie moore', title='melanie moore')
+                  li
+                    input.field(type='text', value='40 broad st', title='40 broad st')
+                  li
+                    input.field(type='text', value='apt. 27h', title='apt. 27h')
+                  li
+                    .zip-active
+                      input.field.large-field(type='text', value='new york', title='new york')
+                      .small-select
+                        span.select-arrow sa
+                        select#cty.city(name='')
+                          option(value='ny') ny
+                          option(value='ny') ny
+                      input.field.med-field(type='text', value='10004', title='10004', placeholder='10004')
+                      .cl  
+                    .in-active
+                      input#zcode.field.med-field(type='text', name='zcode', value='', placeholder='zip code')
+                      label(for='zcode') enter zip code for city and state
+                  li
+                    .big-select
+                      span.select-arrow sa
+                      select.country(name='')
+                        option(value='united states') united states
+                        option(value='Lorem Ipsum') Lorem Ipsum
+                        option(value='Lorem Ipsum') Lorem Ipsum
+                      .cl  
+                  li
+                    .check-box
+                      input#ship-add(type='checkbox', name='ship-add', value='', checked='checked')
+                      label(for='ship-add') my shipping address is the same as my billing address
+                ul
+                  li
+                    img(src='img/pay-d.png', alt='')
+                  li
+                    input.field(type='text', value='**** *** *** 03009', title='**** *** *** 03009')
+                  li
+                    .month-select
+                      span.select-arrow sa
+                      select(name='')
+                        option(value='month') month
+                        option(value='')
+                      .cl  
+                    .year-select
+                      span.select-arrow sa
+                      select.b-year(name='')
+                        option(value='year') year
+                        option(value='')
+                      .cl  
+                    .cl  
+                  li
+                    .row.left
+                      label cvv:
+                      input.field.small-field(type='text', value='6103', title='6103')
+                    .row
+                      label zip code:
+                      input.field.med-field(type='text', value='10004', title='10004')
+                    .cl  
+                input.submit-button(type='submit', value='save changes')
+          //
+             END Acc Entry 
+          //
+             Acc Entry 
+          section.acc-entry
+            //
+               subs content 
+            .subs-content
+              ul.per-list
+                li.per-shirt per shirt
+                li.per-season per season
+                li.total per season
+              .cl  
+              .plans
+                .subs-plan.show-it
+                  ul
+                    li
+                      | premium
+                      span subscription
+                    li.padd-top $20
+                    li.padd-top 3
+                    li.padd-top $60
+                  .cl  
+                .subs-plan
+                  ul
+                    li
+                      | signature
+                      span subscription
+                    li.padd-top $25
+                    li.padd-top 2
+                    li.padd-top $50
+                  .cl  
+                .subs-plan
+                  ul
+                    li
+                      | starter
+                      span subscription
+                    li.padd-top $30
+                    li.padd-top 1
+                    li.padd-top $30
+                  .cl  
+              a.right.edit-btn.change-btn(href='#') change subscription 
+              a.right.edit-btn.cancel-btn(href='#') cancel subscription 
+              .cl  
+            //
+               END Subs content 
+            //
+               Cancel Content 
+            .cancel-content
+              p
+                | your subscription has been canceled. you will no longer be charged or receive emails from us. your account details have been archived.
+              p
+                | if this was an error, or if you would like to subscribe again, simply click below to reactivate your subscription. your login information is still valid.
+              a.edit-btn.activate-btn(href='#') reactivate subscription 
+            //
+               END Cancel Conent 
+            //
+               Change subs 
+            .change-subs
+              form(action='#', method='post')
+                ul.per-list
+                  li.per-shirt per shirt
+                  li.per-season per season
+                  li.total per season
+                .cl  
+                .plans
+                  .subs-plan
+                    ul
+                      li
+                        | premium
+                        span subscription
+                      li.padd-top $20
+                      li.padd-top 3
+                      li.padd-top $60
+                      li.check-li
+                        input.(name='subs-name', type='radio', value='', for='', checked='checked')
+                    .cl  
+                  .subs-plan
+                    .cl  
+                    ul
+                      li
+                        | signature
+                        span subscription
+                      li.padd-top $25
+                      li.padd-top 2
+                      li.padd-top $50
+                      li.check-li
+                        input.(name='subs-name', type='radio', value='')
+                  .subs-plan
+                    ul
+                      li
+                        | starter
+                        span subscription
+                      li.padd-top $30
+                      li.padd-top 1
+                      li.padd-top $30
+                      li.check-li
+                        input.(name='subs-name', type='radio', value='')
+                    .cl  
+                input.submit-button.edit-btn(type='submit', value='save my changes')
+                .cl  
+            //
+               END Change Subs 
+          //
+             END Acc ENtry 
+          //
+             Acc Entry 
+          section.acc-entry
+            //
+               View shirts 
+            .view-shirts
+              //
+                 Look 
+              section.look.type1
+                //
+                   Gallery 
+                section.gallery
+                  .img-area
+                    img.current(src='img/bennet1-sm.jpg', alt='')
+                    img(src='img/bennet1-m.jpg', alt='')
+                    img(src='img/bennet1-sm.jpg', alt='')
+                    img(src='img/bennet1-sm.jpg', alt='')
+                  .thumbs
+                    img.current(src='img/b-thumb1-sm.jpg', alt='')
+                    img(src='img/b-thumb2-sm.jpg', alt='')
+                    img.second-row(src='img/b-thumb3-sm.jpg', alt='')
+                    img.second-row(src='img/b-thumb4-sm.jpg', alt='')
+                    .cl  
+                //
+                   END Gallery 
+                //
+                   Right Content 
+                section.right-content
+                  img.block-img(src='img/bennet-h-d.png', alt='')
+                  .tabbed-content
+                    .tab-nav
+                      ul
+                        li
+                          a(href='#') from the model
+                        li
+                          a(href='#') fabric & quality
+                        li
+                          a(href='#') style tips
+                      .cl  
+                    .tab-entry
+                      p
+                        | “i have this shirt in my closet and wear it every chance i get. soft and gauzy, but also stain- and wrinkle-resistant. for $30. freaking amazing. i will be a customer for life.”
+                      .cl  
+                    .tab-entry
+                      p 2 
+                      .cl  
+                    .tab-entry
+                      p 3
+                      .cl  
+                  a.button.picked(href='#') button
+                //
+                   END Right Content 
+                .cl  
+              //
+                 END Look 
+              //
+                 Look 
+              section.look.type2
+                //
+                   Gallery 
+                section.gallery
+                  .img-area
+                    img.current(src='img/taylor1-sm.jpg', alt='')
+                    img(src='img/taylor1-sm.jpg', alt='')
+                    img(src='img/taylor1-sm.jpg', alt='')
+                    img(src='img/taylor1-sm.jpg', alt='')
+                  .thumbs
+                    img.current(src='img/t-thumb1-sm.jpg', alt='')
+                    img(src='img/t-thumb2-sm.jpg', alt='')
+                    img.second-row(src='img/t-thumb3-sm.jpg', alt='')
+                    img.second-row(src='img/t-thumb4-sm.jpg', alt='')
+                    .cl  
+                //
+                   END Gallery 
+                //
+                   Right Content 
+                section.right-content
+                  img.block-img(src='img/taylor-h-d.png', alt='')
+                  .tabbed-content
+                    .tab-nav
+                      ul
+                        li
+                          a(href='#') from the model
+                        li
+                          a(href='#') fabric & quality
+                        li
+                          a(href='#') style tips
+                      .cl  
+                    .tab-entry
+                      p
+                        | “i have this shirt in my closet and wear it every chance i get. soft and gauzy, but also stain- and wrinkle-resistant. for $30. freaking amazing. i will be a customer for life.”
+                      .cl  
+                    .tab-entry
+                      p 2 
+                      .cl  
+                    .tab-entry
+                      p 3
+                      .cl  
+                  a.button.picked(href='#') button
+                //
+                   END Right Content 
+                .cl  
+              //
+                 END Look 
+              //
+                 Look 
+              section.look.type3
+                //
+                   Gallery 
+                section.gallery
+                  .img-area
+                    img.current(src='img/liz1-sm.jpg', alt='')
+                    img(src='img/liz1-sm.jpg', alt='')
+                    img(src='img/liz1-sm.jpg', alt='')
+                    img(src='img/liz1-sm.jpg', alt='')
+                  .thumbs
+                    img.current(src='img/l-thumb1-sm.jpg', alt='')
+                    img(src='img/l-thumb2-sm.jpg', alt='')
+                    img.second-row(src='img/l-thumb3-sm.jpg', alt='')
+                    img.second-row(src='img/l-thumb4-sm.jpg', alt='')
+                    .cl  
+                //
+                   END Gallery 
+                //
+                   Right Content 
+                section.right-content
+                  img.block-img(src='img/liz-h-d.png', alt='')
+                  .tabbed-content
+                    .tab-nav
+                      ul
+                        li
+                          a(href='#') from the model
+                        li
+                          a(href='#') fabric & quality
+                        li
+                          a(href='#') style tips
+                      .cl  
+                    .tab-entry
+                      p
+                        | “i have this shirt in my closet and wear it every chance i get. soft and gauzy, but also stain- and wrinkle-resistant. for $30. freaking amazing. i will be a customer for life.”
+                      .cl  
+                    .tab-entry
+                      p 2 
+                      .cl  
+                    .tab-entry
+                      p 3
+                      .cl  
+                  a.button.inactive(href='#') button
+                //
+                   END Right Content 
+                .cl  
+              //
+                 END Look 
+            //
+               END View Shirts 
+          //
+             END Acc Entry 
+          //
+             Acc Entry 
+          section.acc-entry
+            //
+               Request Return 
+            .request-return
+              img.(src='img/return.png', alt='')
+              form(action='', method='post')
+                .select-box.left
+                  label
+                    | how many shirts
+                    br
+                    | are you returning?
+                  .amount-select
+                    span.select-arrow sa
+                    select.(name='')
+                      option(value='select amount') select amount
+                      option(value='lorem') lorem
+                .select-box.right
+                  label why are you returning?
+                  .reason-select
+                    span.select-arrow sa
+                    select.(name='')
+                      option(value='select a reason') select a reason
+                      option(value='lorem') lorem
+                .cl  
+                input.submit-button.edit-btn(type='submit', value='request return')
+                .cl  
+                .error-msg
+                  p please select a reason and amount.
+            //
+               END reques Return 
+            //
+               Request status 
+            .request-status
+              img.(src='img/return.png', alt='')
+              img(src='img/status.png', alt='')
+              .progress-bar
+                span.bar
+                span.grey-bar
+                span.progress
+                ul
+                  li
+                    span
+                      img(src='img/num-2.png', alt='')
+                    | 1
+                  li
+                    span
+                      img(src='img/num-2.png', alt='')
+                    | 2
+                  li
+                    span
+                      img(src='img/num-2.png', alt='')
+                    | 3
+                  li
+                    span
+                      img(src='img/num-2.png', alt='')
+                    | 4
+                .cl  
+              ul.return-steps
+                li
+                  | return requested
+                  span
+                    | september 3
+                    sup rd
+                li
+                  | shipping label sent
+                  span
+                    | september 4
+                    sup th
+                li
+                  | shirts received
+                  span
+                    | september 10
+                    sup th
+                li
+                  | refund /exchange processed
+                  span
+                    | september 11
+                    sup th
+              .cl  
+            //
+               END Request status 
+          //
+             END Entry 
+        //
+           END Entries 
+      //
+         END Shell 
+    //
+       END Account  
+  //
+   END Wrap

@@ -1,0 +1,249 @@
+!!! 5
+html.no-js(lang='en')
+head
+    title Elizabeth & Clarke
+
+    // Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.  chromium.org/developers/how-tos/chrome-frame-getting-started 
+    // if lt IE 7
+      p.chromeframe
+        | Your browser is
+        em ancient!
+        a(href='http://browsehappy.com/') Upgrade to a different browser
+        | or
+        a(href='http://www.google.com/chromeframe/?redirect=true') install Google Chrome Frame
+        | to experience this site.
+    
+    // META TAGS
+    meta(charset='utf-8')
+    // .htaccess used to remove these lines to avoid edge case issues.   More info: h5bp.com/i/378 
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='description', content='')
+    // Mobile viewport optimized: h5bp.com/viewport 
+    meta(name='viewport', content='width=device-width')
+    // END META TAGS
+
+
+    // FAVICONS
+    // apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons 
+    link(rel='shortcut icon', href='https://s3.amazonaws.com/ElizabethandClarke/favicon.png')
+    // END FAVICONS
+
+
+    // STYLESHEETS
+    link(rel='stylesheet', href='css/style.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='all')
+    link(rel='stylesheet', href='css/bootstrap.css', type='text/css', media='all')
+    link(rel='stylesheet/less', href='css/style.less')
+    // END STYLESHEETS
+
+
+    // MODERNIZR
+    // All JavaScript at the bottom, except this Modernizr build. 
+    // Modernizr enables HTML5 elements & feature detects for optimal performance. 
+    // Create your own custom Modernizr build: www.modernizr.com/download/
+
+    script(src='js/libs/modernizr-2.5.3.min.js')
+    // END MODERNIZR  
+
+
+// Top Bar 
+#top.element
+  .shell
+    p
+      a
+        span my
+        | Account
+      span |
+      a
+        span call us
+        |  + 1 917 300 8565
+// END Top Bar 
+// Header 
+#header.element
+  .shell
+    // Logo 
+    h1#logo
+      a(href='#top', title='') Elizabeth Clarke
+    span.logo-ac logo-ac
+    // Navigation 
+    #navigation
+      ul
+        li
+          a(href='#work') how it works
+        li
+          a(href='#collection') the collection
+        li
+          a(href='#newsletter') subscribe
+      .cl  
+    // END Navigation 
+//
+   END Header 
+
+  .container!=body
+
+// Footer 
+#footer.shell   
+  .socials
+    a(href='#')
+      img(src='https://s3.amazonaws.com/ElizabethandClarke/facebook.png', alt='')
+    a(href='#')
+      img(src='https://s3.amazonaws.com/ElizabethandClarke/twitter.png', alt='')
+  p#bottom-nav
+    a(href='#') about
+    a(href='#') faq
+    a(href='http://www.elizabethandclarke.tumblr.com') blog
+    a.gosling(href='#') ryan gosling
+  .cl  
+  p.copy.right lovingly hand-coded in new york city.
+  p.copy ©  2012 elizabeth & clarke, inc. all rights reserved.
+  .cl
+
+  // MODALS 
+  .popups
+
+    // GOSLING MODAL 
+    .gosling-popup
+      .popup1
+        p hey girl,
+        p i understand. for you, fashion week lasts all year.
+        p -r
+      .popup2
+        p hey girl,
+        p you don’t do fashion, you are fashion.
+        p -r
+      .popup3
+        p hey girl,
+        p
+          | the world
+          br
+          | is
+          br
+          | your runway.
+        p -r
+      .popup4
+        p hey girl,
+        p
+          | i love how you wear the pants in your own life, or the leather-trimmed silk-chiffon maxi culottes.
+        p -r
+      .popup5
+        p hey girl,
+        p i get it. backstage is your fashion disneyland. 
+        p -r
+      .popup6
+        p hey girl,
+        p
+          | i understand. you like to keep your money where you can see it, hanging in your closet.
+        p -r
+      // END GOSLING MODAL
+
+      // SIZE CHART MODAL
+    .size-chart-popup
+      img.block-img(src='img/size-guide.png', alt='')
+      p
+        | our sizes tend to run small. if you are in doubt, we recommend going up one size. in addition to dress size, we also offer a bust, or cup-size option. size A/B is ideal for women who wear a B-cup bra or smaller. size C/D is ideal for women who wear a C or D-cup bra. additonal plus sizes are coming soon. please follow the sizing chart below to guide you in choosing a size. all sizes are american and measurements are in inches.
+      .left-side
+        ul
+          li size
+          li 00
+          li 0 
+          li 2 
+          li 4 
+          li 6 
+          li 8 
+          li 10
+          li 12
+          li 14
+        ul
+          li bust
+          li 32
+          li 33
+          li 34
+          li 35
+          li 36
+          li 37
+          li 38.5
+          li 39
+          li 40.5
+        ul
+          li waist
+          li 24
+          li 25
+          li 25
+          li 26
+          li 27
+          li 28
+          li 29.5
+          li 31
+          li 32.5
+        ul
+          li hip
+          li 32.5
+          li 34
+          li 35.5
+          li 36.5
+          li 37.5
+          li 38.5
+          li 40
+          li 41.5
+          li 43
+        .cl  
+    // END SIZECHART MODAL
+    
+    // MY SHIRTS MODAL
+    .my-shirts-popup
+      p.heading please select three shirts
+      .shirt
+        img.left(src='img/shirt1.png', alt='')
+        .text
+          p
+            span the bennent
+          p long-sleeved white button-down blouse
+        .cl  
+      .shirt
+        img.left(src='img/shirt2.png', alt='')
+        .text
+          p
+            span the taylor
+          p long-sleeved white v-neck blouse
+        .cl  
+      .shirt
+        img.left(src='img/shirt2.png', alt='')
+        .text
+          p
+            span the taylor
+          p long-sleeved white v-neck blouse
+        .cl  
+      .cl  
+      a.edit-btn(href='#') save my changes
+    // END MY SHIRTS MODAL
+  // END MODALS
+  
+
+  // JAVASCRIPT
+  // All JavaScript at the bottom, except for Modernizr build. 
+  script(src='js/libs/bootstrap.min.js', type='text/javascript')
+  script(src='js/libs/less-1.3.0.min.js')
+  script(src='js/jquery-1.7.2.min.js', type='text/javascript')
+  script(src='js/jquery.scrollTo-1.4.2-min.js', type='text/javascript')
+  script(src='js/jquery.localscroll-1.2.7-min.js', type='text/javascript')
+  script(src='js/jquery.flexslider.js', type='text/javascript')
+  script(src='js/functions.js', type='text/javascript')
+ 
+  // Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+  script
+    window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')
+  
+  // scripts concatenated and minified via build script 
+  script(src='js/plugins.js')
+  script(src='js/script.js')
+  // END JAVASCRIPT 
+  
+  // Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. mathiasbynens.be/notes/async-analytics-snippet 
+  script
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+    
+// END Footer

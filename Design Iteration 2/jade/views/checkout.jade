@@ -1,0 +1,737 @@
+body
+  // Steps Navigation 
+    nav#steps-navigation.
+      .shell
+        ul
+          li.step-1.curr-step
+            a(href='#review')
+              span.circle
+                sup
+                  img(src='img/num.png', alt='')
+                | 1
+              span review
+              | subscription
+          li.step-2
+            a(href='#collections')
+              span.circle
+                sup
+                  img(src='img/num.png', alt='')
+                | 2
+              | select
+              span shirts
+          li.step-3
+            a(href='#details')
+              span.circle
+                sup
+                  img(src='img/num.png', alt='')
+                | 3
+              | finalize
+              span order
+        .cl  
+    //
+       END Steps NAvigation 
+    //
+       review 
+    section#review.element
+      .shell
+        //
+           Signature 
+        section.signature
+          .signature-holder
+            ul
+              li.item-1
+                span.pr-size premium
+                br
+                | subscription
+              li.push-item.item-2
+                span.pr-size $20
+                span
+                  | per
+                  br
+                  | shirt
+              li.push-item
+                span.pr-size 3
+                span
+                  | shirts
+                  br
+                  | per season
+              li.push-item.item-4
+                span.pr-size $60
+                span
+                  | per
+                  br
+                  | season
+            form(action='#', method='post')
+              p
+                | size
+                a.size-pop(href='#') size guide
+              .sig-select
+                .dr-size
+                  span.select-arrow select-arrow
+                  select#drsize(name='')
+                    option(value='dress size') dress size
+                    option(value='lorem') lorem
+                    option(value='lorem ip') lorem ip
+                  .cl  
+              input.submit-button(type='submit', value='choose')
+            .cl  
+          .signature-holder
+            ul
+              li.item-1
+                span.pr-size signature
+                br
+                | subscription
+              li.push-item.item-2
+                span.pr-size $25
+                span
+                  | per
+                  br
+                  | shirt
+              li.push-item
+                span.pr-size 2
+                span
+                  | shirts
+                  br
+                  | per season
+              li.push-item.item-4
+                span.pr-size $50
+                span
+                  | per
+                  br
+                  | season
+            form(action='#', method='post')
+              p
+                | size
+                a.size-pop(href='#') size guide
+              .sig-select
+                .dr-size
+                  span.select-arrow select-arrow
+                  select#drsize(name='')
+                    option(value='dress size') dress size
+                    option(value='lorem') lorem
+                    option(value='lorem ip') lorem ip
+              input.submit-button(type='submit', value='choose')
+            .cl  
+          .signature-holder
+            ul
+              li.item-1
+                span.pr-size starter
+                br
+                | subscription
+              li.push-item.item-2
+                span.pr-size $30
+                span
+                  | per
+                  br
+                  | shirt
+              li.push-item
+                span.pr-size 1
+                span
+                  | shirts
+                  br
+                  | per season
+              li.push-item.item-4
+                span.pr-size $30
+                span
+                  | per
+                  br
+                  | season
+            form(action='#', method='post')
+              p
+                | size
+                a.size-pop(href='#') size guide
+              .sig-select
+                .dr-size
+                  span.select-arrow select-arrow
+                  select#drsize(name='')
+                    option(value='dress size') dress size
+                    option(value='lorem') lorem
+                    option(value='lorem ip') lorem ip
+              input.submit-button(type='submit', value='choose')
+            .cl  
+          p.note note: there are 4 seasons each year.
+        //
+           END Signature 
+    //
+       Collections 
+    section#collections.element
+      .shell
+        //
+           Collection 
+        section.collection
+          img.head-img(src='img/collection-head.png', alt='')
+          p.note note: an email reminder will be sent as new collections arrive. 
+          //
+             Look 
+          section.look.type1
+            //
+               Gallery 
+            section.gallery
+              .img-area
+                img.current(src='img/bennet1.jpg', alt='')
+                img(src='img/bennet2.jpg', alt='')
+                img(src='img/bennet3.jpg', alt='')
+                img(src='img/bennet4.jpg', alt='')
+              .thumbs
+                img.current(src='img/b-thumb1.jpg', alt='')
+                img(src='img/b-thumb2.jpg', alt='')
+                img.second-row(src='img/b-thumb3.jpg', alt='')
+                img.second-row(src='img/b-thumb4.jpg', alt='')
+                .cl  
+            //
+               END Gallery 
+            //
+               Right Content 
+            section.right-content
+              img.block-img(src='img/bennet-h.png', alt='')
+              .tabbed-content
+                .tab-nav
+                  ul
+                    li
+                      a(href='#') from the model
+                    li
+                      a(href='#') fabric & quality
+                    li
+                      a(href='#') style tips
+                  .cl  
+                .tab-entry
+                  p
+                    | “i have this shirt in my closet and wear it every chance i get. soft and gauzy, but also stain- and wrinkle-resistant. for $30. freaking amazing. i will be a customer for life.”
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+                .tab-entry
+                  p 2 
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+                .tab-entry
+                  p 3
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+              a.button(href='#') button
+            //
+               END Right Content 
+            .cl  
+          //
+             END Look 
+          //
+             Look 
+          section.look.type2
+            //
+               Gallery 
+            section.gallery
+              .img-area
+                img.current(src='img/taylor1.jpg', alt='')
+                img(src='img/taylor2.jpg', alt='')
+                img(src='img/taylor3.jpg', alt='')
+                img(src='img/taylor4.jpg', alt='')
+              .thumbs
+                img.current(src='img/t-thumb1.jpg', alt='')
+                img(src='img/t-thumb2.jpg', alt='')
+                img.second-row(src='img/t-thumb3.jpg', alt='')
+                img.second-row(src='img/t-thumb4.jpg', alt='')
+                .cl  
+            //
+               END Gallery 
+            //
+               Right Content 
+            section.right-content
+              img.block-img(src='img/taylor-h.png', alt='')
+              .tabbed-content
+                .tab-nav
+                  ul
+                    li
+                      a(href='#') from the model
+                    li
+                      a(href='#') fabric & quality
+                    li
+                      a(href='#') style tips
+                  .cl  
+                .tab-entry
+                  p
+                    | “i have this shirt in my closet and wear it every chance i get. soft and gauzy, but also stain- and wrinkle-resistant. for $30. freaking amazing. i will be a customer for life.”
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+                .tab-entry
+                  p 2 
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+                .tab-entry
+                  p 3
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+              a.button(href='#') button
+            //
+               END Right Content 
+            .cl  
+          //
+             END Look 
+          //
+             Look 
+          section.look.type3
+            //
+               Gallery 
+            section.gallery
+              .img-area
+                img.current(src='img/liz1.jpg', alt='')
+                img(src='img/liz2.jpg', alt='')
+                img(src='img/liz3.jpg', alt='')
+                img(src='img/liz4.jpg', alt='')
+              .thumbs
+                img.current(src='img/l-thumb1.jpg', alt='')
+                img(src='img/l-thumb2.jpg', alt='')
+                img.second-row(src='img/l-thumb3.jpg', alt='')
+                img.second-row(src='img/l-thumb4.jpg', alt='')
+                .cl  
+            //
+               END Gallery 
+            //
+               Right Content 
+            section.right-content
+              img.block-img(src='img/liz-h.png', alt='')
+              .tabbed-content
+                .tab-nav
+                  ul
+                    li
+                      a(href='#') from the model
+                    li
+                      a(href='#') fabric & quality
+                    li
+                      a(href='#') style tips
+                  .cl  
+                .tab-entry
+                  p
+                    | “i have this shirt in my closet and wear it every chance i get. soft and gauzy, but also stain- and wrinkle-resistant. for $30. freaking amazing. i will be a customer for life.”
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+                .tab-entry
+                  p 2 
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+                .tab-entry
+                  p 3
+                  p.signature
+                    | -
+                    strong lexi
+                    | , blogger, tweeter, elizabeth & clarke customer
+                  .cl  
+              a.button(href='#') button
+            //
+               END Right Content 
+            .cl  
+          //
+             END Look 
+        //
+           END Collection 
+    //
+       END Collections 
+    //
+       Details 
+    section#details.element
+      //
+         Shell 
+      .shell
+        form(action='#', method='post')
+          //
+             Content 
+          #content
+            //
+               Shipping address 
+            section.shipping
+              img.block-img(src='img/s-address.png', alt='')
+              input.field(type='text', value='full name', title='full name')
+              input.field(type='text', value='street addres', title='street addres')
+              input.field(type='text', value='apt, suite, floor', title='apt, suite, floor')
+              //
+                 Zip Code 
+              .zip-code
+                .in-active
+                  input#zcode.field.med-field(type='text', name='zcode', value='zip code', title='zip code')
+                  label(for='zcode') enter zip code for city and state
+                .zip-active
+                  input.field.large-field(type='text', value='new york', title='new york')
+                  .small-select
+                    span.select-arrow sa
+                    select#cty.city(name='')
+                      option(value='ny') ny
+                      option(value='ny') ny
+                  input.field.med-field(type='text', value='10004', title='10004')
+                  .cl  
+              //
+                 END Zip code 
+              .big-select
+                span.select-arrow sa
+                select.country(name='')
+                  option(value='united states') united states
+                  option(value='lorem ipsum') lorem ipsum
+                  option(value='lorem ipsum') lorem ipsum
+                .cl  
+              .check-box
+                input#ship-add(type='checkbox', name='ship-add', value='', checked='checked')
+                label(for='ship-add') my shipping address is the same as my billing address
+              .cl  
+            //
+               END Shipping address 
+            //
+               Payment Details 
+            section.paymnet
+              img.block-img(src='img/p-details.png', alt='')
+              input.field(type='text', value='credit card number', title='credit card number')
+              .month-select
+                span.select-arrow as
+                select(name='')
+                  option(value='month') month
+                  option(value='')
+              .year-select
+                span.select-arrow as
+                select.b-year(name='')
+                  option(value='year') year
+                  option(value='')
+              input.field.small-field(type='text', value='cvv', title='cvv')
+              input.field.med-field(type='text', value='zip code', title='zip code')
+              .cl  
+            //
+               END Payment details 
+            //
+               Create Account 
+            section.account
+              img.block-img(src='img/account.png', alt='')
+              input.field(type='text', value='email address', title='email address')
+              .pass-holder
+                label choose a password
+                input.field.c-pass(type='password', value='', title='')
+              p
+                span must be at least 6 characters
+              p
+                | already have an account?
+                a.sign-in-link(href='#wrap') sign-in
+            //
+               END Create accound 
+          //
+             END Content 
+          //
+             Sidebar 
+          aside#sidebar
+            //
+               My Box 
+            section.my-box
+              img(src='img/m-box.png', alt='')
+              .subs
+                label subscription
+                .subs-select
+                  span.select-arrow sa
+                  select.(name='')
+                    option(value='premium, 3 shirts per season') premium, 3 shirts per season
+                    option(value='signature, 2 shirts per season') signature, 2 shirts per season
+                    option(selected='selected', value='starter, 1 shirts per season') starter, 1 shirts per season
+                .cl  
+              .sizing
+                label sizing
+                .select-1
+                  span.select-arrow sa
+                  select.s(name='')
+                    option(value='dress size') dress size
+                    option(value='lorem') lorem
+                    option(value='lorem ip') lorem ip
+                .select-2
+                  span.select-arrow sa
+                  select.cup-s(name='')
+                    option(value='cup size') cup size
+                    option(value='lorem') lorem
+                    option(value='lorem ip') lorem ip
+                .cl  
+                a.right.size-pop(href='#') size guide
+                .cl  
+              .cl  
+            //
+               END My box 
+            //
+               My Shirts 
+            section.my-shirts
+              img.block-img(src='img/my-shirts.png', alt='')
+              .shirt
+                img.left(src='img/shirt1.png', alt='')
+                .text
+                  p
+                    span the bennent
+                  p long-sleeved white button-down blouse
+                .cl  
+              .shirt
+                img.left(src='img/shirt2.png', alt='')
+                .text
+                  p
+                    span the taylor
+                  p long-sleeved white v-neck blouse
+                .cl  
+              a.edit-btn(href='#') edit my shirts
+              .cl  
+            //
+               END My Shirts 
+            //
+               Summary 
+            section.summary
+              img.block-img(src='img/summary.png', alt='')
+              ul
+                li
+                  | subtotal
+                  span $50
+                li
+                  | tax
+                  span included
+                li
+                  | shipping
+                  span free
+                li
+                  strong
+                    | total
+                    span $50
+            //
+               END Summary 
+            input.submit-button(type='submit', value='')
+          //
+             END Sidebar 
+          .cl  
+      //
+         END SHell 
+    //
+       END Details 
+    footer
+      //
+         Shell 
+      .shell
+        .socials
+          a(href='#')
+            img(src='img/facebook.png', alt='')
+          a(href='#')
+            img(src='img/twitter.png', alt='')
+        p#bottom-nav
+          a(href='#') about
+          a(href='#') faq
+          a(href='#') blog
+          a.gosling(href='#') Ryan gosling
+        .cl  
+        p.copy.right lovingly hand-coded in new york city.
+        p.copy ©  2012 elizabeth & clarke, inc. all rights reserved.
+        .cl  
+      //
+         END Shell 
+  //
+     END Wrap 
+  //
+     Popups 
+  .popups
+    //
+       Size Chart 
+    .size-chart-popup
+      img.block-img(src='img/size-guide.png', alt='')
+      p
+        | our sizes tend to run small. if you are in doubt, we recommend going up one size. in addition to dress size, we also offer a bust, or cup-size option. size A/B is ideal for women who wear a B-cup bra or smaller. size C/D is ideal for women who wear a C or D-cup bra. additonal plus sizes are coming soon. please follow the sizing chart below to guide you in choosing a size. all sizes are american and measurements are in inches.
+      .left-side
+        ul
+          li size
+          li 00
+          li 0 
+          li 2 
+          li 4 
+          li 6 
+          li 8 
+          li 10
+          li 12
+          li 14
+        ul
+          li bust
+          li 32
+          li 33
+          li 34
+          li 35
+          li 36
+          li 37
+          li 38.5
+          li 39
+          li 40.5
+        ul
+          li waist
+          li 24
+          li 25
+          li 25
+          li 26
+          li 27
+          li 28
+          li 29.5
+          li 31
+          li 32.5
+        ul
+          li hip
+          li 32.5
+          li 34
+          li 35.5
+          li 36.5
+          li 37.5
+          li 38.5
+          li 40
+          li 41.5
+          li 43
+        .cl  
+    //
+       END Sizechart 
+    //
+       My Shirts Popup 
+    .my-shirts-popup
+      .shirt-popup
+        p.heading please choose three shirts
+        .shirt
+          img.left(src='img/shirt1.png', alt='')
+          .text
+            p
+              span the bennent
+            p long-sleeved white button-down blouse
+          .cl  
+        .shirt
+          img.left(src='img/shirt2.png', alt='')
+          .text
+            p
+              span the taylor
+            p long-sleeved white v-neck blouse
+          .cl  
+        .shirt
+          img.left(src='img/shirt2.png', alt='')
+          .text
+            p
+              span the taylor
+            p long-sleeved white v-neck blouse
+          .cl  
+        .cl  
+        a.edit-btn(href='#') save my changes
+      .shirt-popup
+        p.heading please choose two shirts
+        .shirt
+          img.left(src='img/shirt1.png', alt='')
+          .text
+            p
+              span the bennent
+            p long-sleeved white button-down blouse
+          .cl  
+        .shirt
+          img.left(src='img/shirt2.png', alt='')
+          .text
+            p
+              span the taylor
+            p long-sleeved white v-neck blouse
+          .cl  
+        .shirt
+          img.left(src='img/shirt1.png', alt='')
+          .text
+            p
+              span the bennent
+            p long-sleeved white button-down blouse
+          .cl  
+        .cl  
+        a.edit-btn(href='#') save my changes
+      .shirt-popup.show-it
+        p.heading please choose one shirt
+        .shirt
+          img.left(src='img/shirt1.png', alt='')
+          .text
+            p
+              span the bennent
+            p long-sleeved white button-down blouse
+          .cl  
+        .shirt
+          img.left(src='img/shirt1.png', alt='')
+          .text
+            p
+              span the bennent
+            p long-sleeved white button-down blouse
+          .cl  
+        .shirt
+          img.left(src='img/shirt1.png', alt='')
+          .text
+            p
+              span the bennent
+            p long-sleeved white button-down blouse
+          .cl  
+        .cl  
+        a.edit-btn(href='#') save my changes
+    //
+       END My Shirts Popup 
+    //
+       Gosling Popup 
+    .gosling-popup
+      .popup1
+        p hey girl,
+        p i understand. for you, fashion week lasts all year.
+        p -r
+      .popup2
+        p hey girl,
+        p you don’t do fashion, you are fashion.
+        p -r
+      .popup3
+        p hey girl,
+        p
+          | the world
+          br
+          | is
+          br
+          | your runway.
+        p -r
+      .popup4
+        p hey girl,
+        p
+          | i love how you wear the pants in your own life, or the leather-trimmed silk-chiffon maxi culottes.
+        p -r
+      .popup5
+        p hey girl,
+        p i get it. backstage is your fashion disneyland. 
+        p -r
+      .popup6
+        p hey girl,
+        p
+          | i understand. you like to keep your money where you can see it, hanging in your closet.
+        p -r
+    //
+       END Gosling popup 
+  //
+     END popups 
+  //
+     JavaScript at the bottom for fast page loading 
+  //
+     Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline 
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+  script
+    window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\\/script>')
+  //
+     scripts concatenated and minified via build script 
+  script(src='js/plugins.js')
+  script(src='js/script.js')
+  //
+     end scripts 
+  //
+     Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. mathiasbynens.be/notes/async-analytics-snippet 
+  script
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));

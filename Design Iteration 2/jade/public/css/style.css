@@ -1,0 +1,528 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+@font-face {
+    font-family: 'BodoniFLFMediumItalic';
+    src: url('fonts/bodoniflf-italic-webfont.eot');
+    src: url('fonts/bodoniflf-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bodoniflf-italic-webfont.woff') format('woff'),
+         url('fonts/bodoniflf-italic-webfont.ttf') format('truetype'),
+         url('fonts/bodoniflf-italic-webfont.svg#BodoniFLFMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LinotypeDidotHeadlineRegular';
+    src: url('fonts/didotlh-headline-webfont.eot');
+    src: url('fonts/didotlh-headline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/didotlh-headline-webfont.woff') format('woff'),
+         url('fonts/didotlh-headline-webfont.ttf') format('truetype'),
+         url('fonts/didotlh-headline-webfont.svg#LinotypeDidotHeadlineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamThinRegular';
+    src: url('fonts/gotham-thin-webfont.eot');
+    src: url('fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-thin-webfont.woff') format('woff'),
+         url('fonts/gotham-thin-webfont.ttf') format('truetype'),
+         url('fonts/gotham-thin-webfont.svg#GothamThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamExtraLightRegular';
+    src: url('fonts/gotham-xlight-webfont.eot');
+    src: url('fonts/gotham-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-xlight-webfont.woff') format('woff'),
+         url('fonts/gotham-xlight-webfont.ttf') format('truetype'),
+         url('fonts/gotham-xlight-webfont.svg#GothamExtraLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('fonts/museo300-regular-webfont.eot');
+    src: url('fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo300-regular-webfont.woff') format('woff'),
+         url('fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('fonts/museo300-regular-webfont.svg#Museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamExtraLightItalic';
+    src: url('fonts/gotham-xlightitalic-webfont.eot');
+    src: url('fonts/gotham-xlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-xlightitalic-webfont.woff') format('woff'),
+         url('fonts/gotham-xlightitalic-webfont.ttf') format('truetype'),
+         url('fonts/gotham-xlightitalic-webfont.svg#GothamExtraLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamLightRegular';
+    src: url('fonts/gotham-light-webfont.eot');
+    src: url('fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-light-webfont.woff') format('woff'),
+         url('fonts/gotham-light-webfont.ttf') format('truetype'),
+         url('fonts/gotham-light-webfont.svg#GothamLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+
+button, input { line-height: normal; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+
+button[disabled], input[disabled] { cursor: default; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* ==|== primary styles =====================================================
+   Author:
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==|== media queries ======================================================
+   EXAMPLE Media Query for Responsive Design.
+   This example overrides the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+/* =============================================================================
+   Styles
+   ========================================================================== */
+
+
+@import url('fonts.css');
+
+* { margin: 0; padding: 0; outline: 0; }
+
+body, html { height: 100%; }
+
+body {
+    font-size: 30px;
+    -webkit-font-smoothing: antialiased;
+    line-height: 35px;
+    font-family: 'Museo300',arial, sans-serif;
+    color: #1e1e1e;
+    background: url(https://s3.amazonaws.com/ElizabethandClarke/dot-pattern.jpg) repeat 0 0;
+    min-width: 1020px;
+}
+
+a { color: #0252aa; text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+input, textarea, select { font-size: 12px; font-family: arial, sans-serif; }
+textarea { overflow: auto; }
+
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+.block-img { display: block; margin: 0 auto; }
+
+h2, h3, h4 { font-weight: normal; }
+h2 { font-family: 'FFFTusj-Bold'; font-size: 50px; line-height: 55px; color: #fff; text-align:center; }
+h3 { font-family: 'GothamThinRegular'; font-size: 49px; line-height: 58px; color: #fff; }
+h4 { font-family: 'GothamExtraLightRegular'; font-size: 29px; line-height: 46px; color: #fff; font-variant: small-caps;}
+
+a.big-button { display: block; width: 457px; height: 127px; margin: 0 auto; }
+a.big-button { font-family: 'FFFTusj-Bold'; font-size: 35px; line-height: 42px; color: #fff; text-transform: uppercase; text-align: center; background: url(https://s3.amazonaws.com/ElizabethandClarke/big-btn.png) no-repeat 0 0;  }
+a.big-button span { display: block; padding: 25px 0 10px; font-size: 26px; line-height: 28px; }
+a.big-button:hover { background-position: 0 -124px; text-decoration: none; }
+
+a.button { display: inline; float: right; width: 360px; height: 121px;  }
+a.button { font-family: 'FFFTusj-Bold'; font-size: 40px; line-height: 32px; color: #fff; text-transform: uppercase; text-align: center; background: url(images/button2.png) no-repeat 0 0;  }
+a.button span { display: block; padding: 31px 0 0; font-size: 26px; line-height: 28px; text-transform: none; }
+a.button:hover { background-position: 0 -121px; text-decoration: none; }
+
+.shell { position: relative; width: 1000px; margin: 0 auto; }
+
+#top { background: url(images/top.png) repeat 0 0; }
+#top p { font-family: 'GothamThinRegular'; font-size: 18px; line-height: 45px; color: #fff; text-align: right; text-transform: uppercase; letter-spacing: -1px; }
+#top p a { color: #fff; text-decoration:none; }
+#top p a span { position: relative; top: -6px; padding: 0; font-family: 'BodoniFLFMediumItalic'; text-transform: none; }
+#top p span { padding: 0 12px; }
+
+#header { position: relative; z-index: 100; width: 100%; margin-bottom: 15px; background: url(https://s3.amazonaws.com/ElizabethandClarke/navigation-ribbon-repeatable.png) repeat-x 0 0; }
+#header span.logo-ac { position: absolute; top: 0; left: 148px; width: 31px; height: 15px; font-size: 0; line-height: 0; text-indent: -4000px; background: url(images/nav-item2.png) no-repeat 0 0; display: none; }
+
+#logo { display: inline; float: left; width: 282px; font-size: 0; line-height: 0; padding: 17px 0 0 6px; }
+#logo a { display: block; width: 282px; height: 38px; background: url(images/logo.png) no-repeat 0 0; text-indent: -4000px; }
+
+#navigation ul { list-style: none; display: inline; float: right; }
+#navigation li { display: inline; float: left; font-family: 'GothamLightRegular'; font-size: 21px; line-height: 83px; letter-spacing: 2px; text-transform: uppercase; padding-left: 50px; }
+#navigation li a { float: left; padding-bottom: 4px; color: #7d7d7d; background: url(images/nav-item2.png) no-repeat center -4000px; }
+#navigation li a:hover {text-decoration: none; }
+#navigation li.active a { background-position: center 0; }
+
+#introduction { width: 1000px; height: 560px; background: url(https://s3.amazonaws.com/ElizabethandClarke/intro2.jpg) no-repeat; }
+#introduction h3 { text-align: center; text-transform: uppercase; width: 570px; padding: 30px 0 33px 30px; }
+#introduction h3.small { font-size: 45px; padding: 40px 0 33px 30px; letter-spacing: 2px; }
+#introduction h4 { padding: 0 0 0 40px ; text-align: center; width: 550px; letter-spacing: -1px; }
+#introduction a.button { margin: 205px 30px 0 0; width: 349px; height: 134px; background: url(https://s3.amazonaws.com/ElizabethandClarke/button3.png) no-repeat 0 0;  }
+#introduction a.button:hover { background-position: 0 -134px; }
+#introduction a.button:active { background-position: 0 -132px; }
+
+#work { padding: 22px 0 22px; width: 100%; background: #fff url(https://s3.amazonaws.com/ElizabethandClarke/slider.png) no-repeat center 57px; }
+#work .post { position: relative;  width: 100%; }
+
+#slider { padding-bottom: 13px; }
+
+#collection { padding: 20px 0 61px; }
+#collection .block-img { padding-bottom: 15px; }
+#collection h2 span { text-transform: uppercase; }
+#collection .look { padding-bottom: 35px; }
+#collection .img-area { display: inline; float: left; width: 500px; }
+#collection .img-area img { padding: 17px 17px 23px; display: none; }
+#collection .img-area img.current { display: block; }
+#collection .thumbs { display: inline; float: right; width: 500px; }
+#collection .thumbs img { float: left; padding: 8px; margin: 5px 0px 5px 5px; cursor: pointer; }
+#collection .thumbs img.current { border: solid 5px #726a6a; margin: 0; border-radius: 5px; padding-right: 3px; }
+#collection .type1 .img-area { background: #020100; }
+#collection .type1 .thumbs img { background: #020100; }
+#collection .type2 .img-area,
+#collection .type2 .thumbs img { background: #240000; }
+#collection .type3 .img-area,
+#collection .type3 .thumbs img { background: #faeadd; }
+
+.tabbed-content { position: relative; display: inline; float: left; padding: 5px 11px 14px; margin-bottom: 32px; width: 602px; background: #fff; border-radius: 10px 10px 10px 0; }
+.tabbed-content .tab-entry { display: none; }
+.tabbed-content .tab-entry p { font-family: 'Museo300'; -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 18px; color: #3d3d3d; padding-bottom: 7px; }
+.tabbed-content .tab-entry p.signature { display: inline; float: right; width: 202px; padding-bottom: 0;}
+.tabbed-content .tab-nav { position: absolute; bottom: -32px; left: 0; } 
+.tabbed-content .tab-nav li { list-style: none; display: inline; float: left; padding-right: 10px; font-family: 'Museo300'; -webkit-font-smoothing: antialiased; font-size: 25px; line-height: 32px; }
+.tabbed-content .tab-nav li a { float: left; height: 33px; padding-left: 12px; background: url(images/tab.png) no-repeat 0 0; color: #3d3d3d; }
+.tabbed-content .tab-nav li a span { float: left; height: 33px; padding-right: 12px; background: url(images/tab.png) no-repeat right 0; }
+.tabbed-content .tab-nav li a:hover { background-position: 0 -33px; text-decoration: none; }
+.tabbed-content .tab-nav li a:hover span { background-position: right -33px; }
+.tabbed-content .tab-nav li.active a { background-position: 0 -33px; }
+.tabbed-content .tab-nav li.active a span { background-position: right -33px; }
+
+#plans { padding: 42px 0 56px; background: url(images/plans.png) repeat-x 0 0; }
+#plans .box { position: relative; display: inline; float: left; padding: 36px 39px 0; width: 242px; height: 447px; margin-right: 20px; background: url(images/box.png) no-repeat 0 0; }
+#plans .box.last { margin-right: 0; }
+#plans .box img.label { position: absolute; top: -3px; left: -6px; }
+#plans .box p { text-align: center; color: #fff; font-size: 24px; line-height: 26px; }
+#plans .box p span { position: relative; top: 10px; font-size: 38px; line-height: 40px; }
+#plans .box p.description { padding-top: 20px; }
+#plans .box p.price { font-size: 75px; line-height: 78px; }
+#plans .box p.price span { position: relative; top: -40px;}
+#plans .box p.shirts img { margin-right: 1px; padding-bottom: 15px; }
+#plans .box p.push-bottom { padding: 20px 0 20px; }
+#plans .box img.block-img { padding-bottom: 17px; }
+#plans .box .btn-box { display: inline; float: right; width: 130px; }
+#plans .box .btn-box a { display: block;  width: 131px; height: 39px; background: url(images/box-btn.png) no-repeat 0 0; }
+#plans .box .btn-box a { text-align: center; line-height: 39px; color: #fff; font-size: 24px;  }
+#plans .box .btn-box a:hover { text-decoration: none; }
+
+#newsletter { padding-top: 36px; background: url(images/shadow2.png) no-repeat center 0; }
+#newsletter .wrap { background: #fff; padding: 23px 0; }
+#newsletter p { font-size: 34px; line-height: 36px; color: #3c3c3c; text-align: center; }
+#newsletter form { width: 682px; margin: 0 auto; padding-top: 19px; }
+#newsletter form .field-holder { display: inline; float: left; width: 480px; background: url(images/field.png) no-repeat 0 0; }
+#newsletter form .field-holder .field { padding: 7px 13px 8px; width: 454px; line-height: 37px; font-family: 'Museo300'; -webkit-font-smoothing: antialiased; font-size: 32px; color: #3c3c3c; background: none; border: 0; }
+#newsletter form .submit-button { position: relative; top: -6px; display: inline; float: right; width: 193px; height: 58px; background: url(images/submit-button.png) no-repeat 0 0; border: 0; }
+#newsletter form .submit-button { font-family: 'Museo300'; -webkit-font-smoothing: antialiased; font-size: 32px; color: #fff; cursor: pointer;  }
+#newsletter form p { font-size: 19px; line-height: 23px; padding: 6px 0 0 97px; text-align: left; }
+
+#press { padding-top: 78px; }
+#press p { font-size: 35px; color: #262626; text-shadow: 1px -2px #575757; text-align: center;  }
+#press p a img { padding: 0 45px; }
+
+#footer { padding: 20px 0 50px; }
+#footer p { font-size: 35px; color: #262626; text-shadow: 1px -2px #575757;  }
+#footer .socials { display: inline; float: right; width: 400px; padding: 63px 0 0 0; }
+#footer .socials a img { width: 200px; height: 75px; }
+#footer p a img { padding: 0 45px; }
+#footer p.copy { font-size: 16px; color: #141414; text-shadow: none; }
+
+#bottom-nav { padding-top: 83px; font-size: 24px !important; text-transform: uppercase; text-align:left !important; }
+#bottom-nav a { float: left; color: #141414; margin-right: 20px; text-decoration: none; }

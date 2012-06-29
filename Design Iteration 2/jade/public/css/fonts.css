@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'BodoniFLFMediumItalic';
+    src: url('fonts/bodoniflf-italic-webfont.eot');
+    src: url('fonts/bodoniflf-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bodoniflf-italic-webfont.woff') format('woff'),
+         url('fonts/bodoniflf-italic-webfont.ttf') format('truetype'),
+         url('fonts/bodoniflf-italic-webfont.svg#BodoniFLFMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'LinotypeDidotHeadlineRegular';
+    src: url('fonts/didotlh-headline-webfont.eot');
+    src: url('fonts/didotlh-headline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/didotlh-headline-webfont.woff') format('woff'),
+         url('fonts/didotlh-headline-webfont.ttf') format('truetype'),
+         url('fonts/didotlh-headline-webfont.svg#LinotypeDidotHeadlineRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamThinRegular';
+    src: url('fonts/gotham-thin-webfont.eot');
+    src: url('fonts/gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-thin-webfont.woff') format('woff'),
+         url('fonts/gotham-thin-webfont.ttf') format('truetype'),
+         url('fonts/gotham-thin-webfont.svg#GothamThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamExtraLightRegular';
+    src: url('fonts/gotham-xlight-webfont.eot');
+    src: url('fonts/gotham-xlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-xlight-webfont.woff') format('woff'),
+         url('fonts/gotham-xlight-webfont.ttf') format('truetype'),
+         url('fonts/gotham-xlight-webfont.svg#GothamExtraLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('fonts/museo300-regular-webfont.eot');
+    src: url('fonts/museo300-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museo300-regular-webfont.woff') format('woff'),
+         url('fonts/museo300-regular-webfont.ttf') format('truetype'),
+         url('fonts/museo300-regular-webfont.svg#Museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamExtraLightItalic';
+    src: url('fonts/gotham-xlightitalic-webfont.eot');
+    src: url('fonts/gotham-xlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-xlightitalic-webfont.woff') format('woff'),
+         url('fonts/gotham-xlightitalic-webfont.ttf') format('truetype'),
+         url('fonts/gotham-xlightitalic-webfont.svg#GothamExtraLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamLightRegular';
+    src: url('fonts/gotham-light-webfont.eot');
+    src: url('fonts/gotham-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gotham-light-webfont.woff') format('woff'),
+         url('fonts/gotham-light-webfont.ttf') format('truetype'),
+         url('fonts/gotham-light-webfont.svg#GothamLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
